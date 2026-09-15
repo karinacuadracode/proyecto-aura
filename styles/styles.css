@@ -176,12 +176,14 @@ body {
     border-radius: 12px;
 }
 
-.destacados h2 {
+.destacados h2,
+.producto-ysl h2,
+.producto-pr h2 {
     color: #ffffff;
     text-align: center;
     padding: 20px;
     width: 100%;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .contenedor-destacados {
@@ -195,7 +197,7 @@ body {
     width: 100%;
 }
 
-.fragacia-destacada {
+.fragancia-destacada {
     background-color: #F9F6F0;
     display: flex;
     flex-direction: column;
@@ -208,11 +210,11 @@ body {
     border-radius: 12px;         
 }
 
-.fragacia-destacada h3 {
+.fragancia-destacada h3 {
     font-size: 18px; 
 }
 
-.fragacia-destacada figure {
+.fragancia-destacada figure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,13 +222,13 @@ body {
     width: 100%;
 }
 
-.fragacia-destacada img {
+.fragancia-destacada img {
     width: 100%;
     height: auto;
     max-width: 350px;
 }
 
-.fragacia-destacada figcaption {
+.fragancia-destacada figcaption {
     font-size: 14px;
     color: #654B38;
     width: 100%;
@@ -383,10 +385,10 @@ body {
 
 .producto-ysl h2,
 .producto-pr h2 {
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
     color: #2A1E17;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .grilla-productos {
@@ -443,7 +445,7 @@ body {
 }
 
 .presentacion-perfil-olfativo h2 {
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
     padding: 15px;
     background-color: #d2c4ac;
@@ -586,13 +588,13 @@ footer h3 {
 
 /* media queries */
 @media (max-width: 767px) {
-    .carousel-item .fragacia-destacada {
+    .carousel-item .fragancia-destacada {
         height: auto;
         min-height: 520px;
         margin: 0 auto;
     }
 
-    .carousel-item .fragacia-destacada img {
+    .carousel-item .fragancia-destacada img {
         height: 180px;
         object-fit: contain;
         width: 100%;
@@ -680,6 +682,16 @@ footer h3 {
     }
 
     /*principal*/
+    .hero h2,
+    .destacados h2,
+    .perfil-olfativo h2,
+    .recomendaciones h2,
+    .promociones h2,
+    .nuestra-comunidad h2,
+    .presentacion-perfil-olfativo h2 {
+        font-size: 27px;
+    }    
+
     .contenedor-principal {
         display: grid;
         grid-template-columns: 1fr;
@@ -694,6 +706,10 @@ footer h3 {
         max-width: 1200px;
         margin: 0 auto 60px auto;
         padding: 0 20px;
+    }
+
+    .container h2 {
+        font-size: 27px;
     }
 
     .hero {
@@ -731,7 +747,7 @@ footer h3 {
         align-items: start;
     }
 
-    .fragacia-destacada {
+    .fragancia-destacada {
         background-color: #F9F6F0;
         display: flex;
         flex-direction: column;
@@ -773,6 +789,14 @@ footer h3 {
         padding: 50px;
     }
 
+    .contenedor-productos h2 {
+        font-size: 27px;
+    }
+
+    .contenedor-producto h3 {
+        font-size: 20px;
+    }    
+
    .producto-ysl {
         display: flex;
         flex-direction: column;
@@ -796,6 +820,11 @@ footer h3 {
         border-radius: 12px;
         gap: 30px;
     } 
+
+    .producto-ysl h2,
+    .producto-pr h2 {
+        font-size: 27px;
+    }
 
     .grilla-productos {
         display: grid;
