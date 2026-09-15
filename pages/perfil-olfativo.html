@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Perfil olfativo</title>
+   
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">                
+                <a href="#" class="logo"> 
+                    <img src="../images/logo/logo.png" alt="Logo Aura" width="80" height="80">
+                    <h1>Perfil olfativo</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#elMenu" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse mt-3" id="elMenu">               
+                    <ul class="links-pages d-flex flex-wrap ms-auto gap-2 mb-0">
+                        <li><a href="../index.html">Inicio</a></li> 
+                        <li><a href="productos.html">Productos</a></li>                
+                        <li><a href="#">Perfil olfativo</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                
+                    <div class="accesos d-flex gap-2 ms-lg-2 mt-2 mt-lg-0">
+                        <a class="crear-cuenta" href="#">Creá tu cuenta</a>
+                        <a class="acceder" href="#">Acceder</a>
+                    </div>                
+                </div>
+            </div>
+        </nav>    
+    </header>
+
+    <main class="presentacion-perfil-olfativo">
+        <section >
+            <h2>Descubrí tu firma olfativa</h2>
+
+            <div class="contenedor-notas-olfativas">
+                <h3>Familias y notas principales</h3>
+                <p>Conocé las familias olfativas que mejor se adaptan a tu personalidad, estilo de vida y momentos del día</p>
+                <figure>
+                    <img src="../images/adicionales/fragrance-wheel.jpg" alt="Rueda olfativa con notas de perfumes">
+                    <figcaption>Análisis de notas de salida, corazón y fondo para definir tu perfil</figcaption>
+                </figure>
+            </div>
+
+            <div class="contenedor-test-olfativo">
+                <p>Responde algunas preguntas para descubrirte y encontrar tu perfume ideal. No te llevará más de 5 minutos. <br>¿Estás listo?<br>
+                    <button class="btn button-test mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#formularioTest" aria-expanded="false" aria-controls="formularioTest">Empezar test</button>
+                </p>
+
+                <div class="collapse w-100 mt-3" id="formularioTest">
+                    <div class="p-3">
+                        <!-- Pregunta 1 -->
+                        <p class="fw-bold fs-6 mb-3">1. ¿Qué tipo de aromas preferís?</p>
+                        
+                        <div class="form-check text-start mb-2">
+                            <input class="form-check-input" type="radio" name="pregunta1" id="opcion1">
+                            <label class="form-check-label" for="opcion1">
+                                Frescos y cítricos
+                            </label>
+                        </div>
+                        
+                        <div class="form-check text-start mb-4">
+                            <input class="form-check-input" type="radio" name="pregunta1" id="opcion2">
+                            <label class="form-check-label" for="opcion2">
+                                Dulces y florales
+                            </label>
+                        </div>
+
+                        <!-- Pregunta 2 -->
+                        <p class="fw-bold fs-6 mb-3">2. ¿En qué momento del día usás más perfume?</p>
+                        
+                        <div class="form-check text-start mb-2">
+                            <input class="form-check-input" type="radio" name="pregunta2" id="opcion2_1">
+                            <label class="form-check-label" for="opcion2_1">
+                                Durante el día (trabajo o rutina)
+                            </label>
+                        </div>
+                        
+                        <div class="form-check text-start mb-4">
+                            <input class="form-check-input" type="radio" name="pregunta2" id="opcion2_2">
+                            <label class="form-check-label" for="opcion2_2">
+                                Para la noche o salidas especiales
+                            </label>
+                        </div>
+
+                        <!-- Botón final -->
+                        <button type="submit" class="btn button-test mt-2">Ver mi resultado</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer"> 
+            <div> 
+                <h3>Nuestras redes sociales</h3>
+                <ul class="lista-footer"> 
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://x.com" target="_blank">X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Mi cuenta</h3>
+                <ul class="lista-footer">
+                    <li>Resumen</li>
+                    <li>Favoritos</li>
+                    <li>Ayuda</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2026 - Karina Cuadra</p>
+            <p>Avenida Siempreviva 742 (742 Evergreen Terrace), CP 123, Springfield, CABA</p>
+        </div>
+    </footer>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>

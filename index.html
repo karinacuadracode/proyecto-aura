@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Universo Olfativo</title>
+   
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">                
+                <a href="#" class="logo"> 
+                    <img src="images/logo/logo.png" alt="Logo Aura" width="80" height="80">
+                    <h1>Aura <br> Universo Olfativo</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#elMenu" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse mt-3" id="elMenu">               
+                    <ul class="links-pages d-flex flex-wrap ms-auto gap-2 mb-0">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="pages/productos.html">Productos</a></li>
+                        <li><a href="pages/perfil-olfativo.html">Perfil olfativo</a></li>
+                        <li><a href="pages/nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                
+                    <div class="accesos d-flex gap-2 ms-lg-2 mt-2 mt-lg-0">
+                        <a class="crear-cuenta" href="#">Creá tu cuenta</a>
+                        <a class="acceder" href="#">Acceder</a>
+                    </div>                
+                </div>
+            </div>
+        </nav>    
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="hero">
+            <h2>Cada momento pide una esencia única</h2>
+            
+            <p>Te acompañamos a descubrir la fragancia que te define y cuenta tu historia en cada ocasión</p>
+            
+            <a href="pages/productos.html" class="button-hero">Conocer más</a>
+        </section>
+
+        <section class="destacados"> 
+            <h2>Productos destacados de la semana</h2>
+
+            <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="fragacia-destacada">
+                            <h3>LIBRE Berry Crush de Yves Saint Laurent</h3>
+                            <figure>
+                                <img src="images/productos/ysl/libre-berry-crush.png" class="d-block w-100" alt="Berry Crush de Libre">
+                                <figcaption>Le invita a abrazar una nueva
+                                    libertad floral afrutada con un toque irresistible. Experimente el equilibrio perfecto de
+                                    jugosa dulzura y cremosa sensualidad, que la hacen ideal para cualquier ocasión.
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="fragacia-destacada">
+                            <h3>La vie est belle de Lancôme</h3>
+                            <figure>
+                                <img src="images/productos/lancome/la-vie-est-belle.png" class="d-block w-100" alt="La vie est belle de Lancome">
+                                <figcaption>Una de las fragancias más icónicas y vendidas del
+                                    mundo en la perfumería de diseñador. Su nombre se traduce del francés como "la vida es
+                                    bella" y está concebida como una declaración universal de alegría, feminidad y libertad.
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="fragacia-destacada">
+                            <h3>Phantom Intense de Paco Rabanne</h3>
+                            <figure>
+                                <img src="images/productos/paco-rabanne/phantom-intense.png" class="d-block w-100" alt="Phantom Intense de Paco Rabanne">
+                                <figcaption>Su composición aromática envuelve con notas profundas y duraderas, ideal para quien desea un aroma que acompañe durante todo el día y trascienda en el ambiente. Es la opción para quienes valoran las grandes casas de perfumería y buscan una fragancia que refleje personalidad y elegancia.
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="perfil-olfativo">
+            <h2>Armar mi perfil olfativo</h2>
+            <p>¿Te gustaría empezar a armar tu perfil olfativo? Te asesoramos paso a paso.</p>
+
+            <a href="pages/perfil-olfativo.html" class="button-perfil">Ir a asesoría</a>
+
+        </section>
+       
+        <section class="recomendaciones">
+            <h2>Recomendaciones rápidas</h2>
+            <p>Según clima, actividad, precios.</p>
+        </section>
+
+        <section class="promociones">
+            <h2>Promociones</h2>
+            <p>Contamos con descuentos en tarjetas bancarias, cuotas sin interés y 10% de descuento pagando con transferencia.</p>
+        </section>
+
+        <section class="nuestra-comunidad">
+            <h2>Nuestra comunidad</h2>
+            <p>
+                Historias, recomendaciones y rincones compartidos por quienes hacen latir este espacio. 
+                <br>Sumate a la charla, descubrí lo que otros vivieron y compartinos tu propia experiencia. 
+                <br>Unite también a nuestras redes sociales y sé parte de la conversación. 
+                <br>¡Queremos escucharte y conocer tus momentos especiales!
+            </p>
+
+            <!-- Recomendación usuario -->
+            <div class="recomendaciones-usuarios">
+                <div class="card review-card shadow-sm border-0 my-3 tarjeta-comunidad">
+                    <div class="card-header bg-transparent d-flex align-items-center justify-content-between py-3">
+                        <strong class="mb-0 text-dark">Lisa</strong>
+                        <small class="text-muted">Hace 2 días</small>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text mb-2">"No sabía cual era mi perfume ideal y gracias a la página pude encontrar el "LIBRE Berry Crush". Me llegó súper rápido y la atención fue un 10. Gracias por la calidez"</p>
+                        <div class="stars-valoracion1"></div>
+                    </div>
+                </div>
+
+                <div class="card review-card shadow-sm border-0 my-3 tarjeta-comunidad">
+                    <div class="card-header bg-transparent d-flex align-items-center justify-content-between py-3">
+                        <strong class="mb-0 text-dark">Marge</strong>
+                        <small class="text-muted">Hace 7 horas</small>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text mb-2">"Gracias por ayudarme a elegir el perfume para regalarle a mi primo en su cumpleaños"</p>
+                        <div class="stars-valoracion2"></div>
+                    </div>
+                </div>  
+
+                <div class="card review-card shadow-sm border-0 my-3 tarjeta-comunidad">
+                    <div class="card-header bg-transparent d-flex align-items-center justify-content-between py-3">
+                        <strong class="mb-0 text-dark">Skinner</strong>
+                        <small class="text-muted">Hace 11 minutos</small>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text mb-2">"Estaba desorientado porque no sabía que regalarle a mi mamá, pero gracias a la comunidad pude encontrar el regalo perfecto..."</p>
+                        <div class="stars-valoracion3"></div>
+                    </div>
+                </div>
+            </div>                      
+        </section>   
+    </main>
+
+    <footer>
+        <div class="contenedor-footer"> 
+            <div> 
+                <h3>Nuestras redes sociales</h3>
+                <ul class="lista-footer"> 
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://x.com" target="_blank">X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Mi cuenta</h3>
+                <ul class="lista-footer">
+                    <li>Resumen</li>
+                    <li>Favoritos</li>
+                    <li>Ayuda</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2026 - Karina Cuadra</p>
+            <p>Avenida Siempreviva 742 (742 Evergreen Terrace), CP 123, Springfield, CABA</p>
+        </div>
+    </footer>
+    
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
