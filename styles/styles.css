@@ -536,6 +536,13 @@ body {
     color: #C8A88D;
 }
 
+.accordion-nosotros {
+    --bs-accordion-active-bg: #f4eddf;
+    --bs-accordion-active-color: #471a19;
+    --bs-accordion-btn-bg: #f4eddf;
+    --bs-accordion-btn-color: #471a19;
+}
+
 /*----------------------footer----------------------*/
 footer {
     background-color: #d7c4b2;
