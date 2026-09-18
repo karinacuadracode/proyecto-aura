@@ -1,0 +1,11 @@
+::selection {
+    background-color: $color-seleccion-texto;
+    color: $color-principal;
+}
+
+body {
+    background-color: $color-principal;
+    font-family: "Noto Sans", sans-serif;
+    color: $color-texto-general;
+    width: 100%;
+}

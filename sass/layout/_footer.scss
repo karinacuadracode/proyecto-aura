@@ -1,0 +1,35 @@
+footer {
+    background-color: $color-footer;
+    color: $color-texto-general;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    h3 {
+        font-size: 15px;
+        color: $color-texto-general;
+    }
+}
+
+.contenedor-footer {
+    display: flex;
+    padding: 30px;
+    min-height: 200px;
+    text-align: center;
+    @include flexbox (null, space-around, center);
+    .lista-footer { 
+        text-decoration: none;
+        color: $color-nav-texto;
+        list-style: none;
+        font-size: 14px;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+.copyright {
+    text-align: center;
+    color: $color-texto-secundario;
+    padding: 30px 30px;
+    font-size: 10px;
+}

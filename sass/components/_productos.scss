@@ -1,0 +1,58 @@
+.contenedor-productos {
+    width: 100%;
+    padding: 0;
+}
+
+.producto-ysl {
+    background-color: $color-fondo-producto2;
+    display: flex;
+    width: 92%;
+    max-width: 500px;
+    border-radius: 12px;
+    @include estilos-caja(30px, 20px auto, 20px);
+    @include flexbox (column, space-between, center);
+}
+
+.producto-pr {
+    @include estilos-caja(30px, 20px auto, 20px);
+    @extend .producto-ysl;
+    background-color: $color-fondo-producto1;
+}
+
+.producto-ysl h2,
+.producto-pr h2 {
+    font-size: 26px;
+    text-align: center;
+    color: $color-texto-general;
+    margin-bottom: 15px;
+}
+
+.grilla-productos {
+    display: flex;
+    width: 100%;   
+    @include estilos-caja(10px, null, 20px);
+    @include flexbox (column, center, center); 
+}
+
+.contenedor-producto {
+    @extend .fragancia-destacada;
+    @include estilos-caja(30px, null, 20px);     
+}
+
+.contenedor-producto figure {
+    display: flex;
+    @include flexbox (column, null, center);
+    gap: 15px;
+    width: 100%;
+    img {
+        height: auto;
+        width: 100%;
+        max-width: 260px;
+    }
+    figcaption {
+        font-size: 14px;
+        color: $color-texto-secundario;
+        width: 100%;
+        text-align: center;
+    }
+}

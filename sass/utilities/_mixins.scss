@@ -1,0 +1,11 @@
+@mixin estilos-caja($padding, $margin, $gap) {
+    padding: $padding;
+    margin: $margin;
+    gap: $gap;
+}
+
+@mixin flexbox ($flex-direction, $justify-content, $align-items) {
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

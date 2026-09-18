@@ -1,0 +1,76 @@
+.header {
+    background-color: $color-header;
+    @include flexbox (column, flex-start, flex-start);
+    width: 100%;
+    @include estilos-caja(30px, null, 15px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    img {
+        width: 60px;
+        height: auto;
+    }
+    h1 {
+        font-family: "Inconsolata", monospace;
+        font-size: 20px;
+        color: $color-texto-general;
+    }
+}
+
+.links-pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 12px;
+    li a {
+        text-decoration: none;
+        color: $color-nav-texto;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: $color-nav-fondo;
+        padding: 8px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    &:active {
+        color: $color-tipo1;
+        background-color: $color-tipo2;
+    }
+    &:hover,
+    &:focus
+    {
+        background-color: $color-nav-hover;
+        color: $color-nav-acento;
+    }
+}
+
+.accesos {
+    display: flex;
+    border-radius: 10px;
+    @include flexbox (null, center, center);
+    @include estilos-caja(8px, null, 15px);
+    .crear-cuenta,
+    .acceder {
+        background-color: $color-nav-texto;
+        color: $color-nav-fondo;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    &:hover,
+    &:focus {
+        color: $color-nav-hover;
+        background-color: $color-nav-acento;
+    }
+    &:active {
+        color: $color-tipo1;
+        background-color: $color-tipo2;
+    }
+}

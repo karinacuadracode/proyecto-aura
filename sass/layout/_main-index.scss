@@ -1,0 +1,196 @@
+.hero {
+    background-color: $color-hero;
+    color: $color-texto-general;
+    display: flex; 
+    width: 100%;
+    max-width: 500px;
+    @include flexbox(column, space-between, center);
+    @include estilos-caja(30px, 20px auto, 15px);     
+    h2 {
+        font-size: 26px; 
+        text-align: center; 
+    }
+    p {
+        font-size: 16px; 
+        color: $color-texto-secundario; 
+        justify-content: space-between; 
+        padding: 10px; 
+        text-align: center; 
+    }
+}
+
+.button-hero { 
+    color: $color-tipo2; 
+    text-decoration: none; 
+    font-weight: 600; 
+    background-color: $color-boton1-fondo; 
+    border-radius: 10px; 
+    padding: 6px; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+    &:hover { 
+        color: $color-tipo1; 
+        background-color: $color-boton1-hover;
+    }
+    &:active { 
+        background-color: $color-boton1-fondo; 
+        color: $color-tipo2; 
+    }
+    &::after {
+        content: '🔍'; 
+        margin-right: 5px;  
+    }    
+}
+
+/*productos destacados*/ 
+.destacados {
+    background-color: $color-destacado;
+    display: flex;
+    width: 92%;
+    border-radius: 12px;
+    @include estilos-caja(20px, 20px auto, 20px);
+    @include flexbox (column, null, center);
+}
+
+.destacados h2, 
+.producto-ysl h2, 
+.producto-pr h2 {
+    color: $color-tipo1; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+    font-size: 26px; 
+}
+
+.contenedor-destacados { 
+    display: flex; 
+    flex-wrap: wrap;   
+    width: 100%;
+    @include estilos-caja(0px, 0px, 20px);
+    @include flexbox(column, center, null); 
+}
+
+.fragancia-destacada { 
+    background-color: $color-principal; 
+    display: flex; 
+    text-align: center;     
+    width: 100%; 
+    max-width: 100%; 
+    border-radius: 12px; 
+    @include estilos-caja(30px, null, 20px);
+    @include flexbox(column, null, center);
+    h3 {
+        font-size: 18px;
+    }
+}
+
+.fragancia-destacada figure {
+    display: flex;
+    @include flexbox (column, null, center);
+    gap: 15px;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+    figcaption {
+        font-size: 14px;
+        color: $color-texto-secundario;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*perfil olfativo*/
+.perfil-olfativo {
+    display: flex;
+    text-align: center;
+    background-color: $color-nav-fondo;
+    width: 92%;
+    max-width: 500px;
+    @include estilos-caja(30px, 20px auto, 20px);
+    @include flexbox (column, space-between, center);
+}
+
+.button-perfil {
+    color: $color-tipo2;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: $color-boton1-fondo;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;   
+    &:hover {
+        color: $color-tipo1;
+        background-color: $color-boton1-hover;
+    }
+    &:active {
+        background-color: $color-boton1-fondo;
+        color: $color-tipo2;
+    }
+    &::before {
+        content: '↪';
+        margin-right: 5px;   
+    }
+}
+
+/*recomendaciones*/
+.recomendaciones {
+    display: flex;
+    text-align: center;
+    background-color: $color-nav-fondo;
+    width: 92%;
+    max-width: 500px;
+    @include estilos-caja(30px, 20px auto, 20px);
+    @include flexbox (column, space-between, center);
+}
+
+/*promociones*/
+.promociones {
+    background-color: $color-promocion;
+    display: flex;
+    text-align: center;
+    width: 92%;
+    max-width: 500px;
+    @include estilos-caja(30px, 20px auto, 20px);
+    @include flexbox(column, space-between, center);
+}
+
+/*comunidad*/
+.nuestra-comunidad {
+    display: flex;
+    text-align: center;
+    width: 92%;
+    max-width: 500px;
+    background-color: $color-comunidad;
+    @include estilos-caja(30px, 20px auto, 20px);
+    @include flexbox(column, space-between, center);
+}
+
+.recomendaciones-usuarios {
+    display: flex;
+    flex-wrap: wrap;   
+    width: 100%;  
+    @include estilos-caja(10px, null, 20px);
+    @include flexbox (null, center, stretch);  
+}
+
+.stars-valoracion1::before {
+    content: '⭐⭐⭐⭐⭐';
+    color: $color-valoracion;
+}
+
+.stars-valoracion2::before {
+    content: '⭐⭐⭐⭐';
+    color: $color-valoracion;
+}
+
+.stars-valoracion3::before {
+    content: '⭐⭐⭐';
+    color: $color-valoracion;
+}
+
+.tarjeta-comunidad {
+    max-width: 350px;
+}

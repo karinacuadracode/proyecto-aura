@@ -1,0 +1,232 @@
+/* media queries */
+@media (max-width: 767px) {
+    .carousel-item .fragancia-destacada {
+        height: auto;
+        min-height: 520px;
+        margin: 0 auto;
+    }
+    img {
+        height: 180px;
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .destacados {
+        max-width: 95%;
+        width: 95%;
+        margin: 20px auto;
+    } 
+    .contenedor-destacados {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .grilla-productos {
+    @extend .contenedor-destacados;
+    }
+} 
+
+@media (min-width: 1024px) {    
+    /*header*/
+    .header {
+        padding: 15px;
+        @include flexbox (row, space-between, center);
+    }    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    
+        h1 { 
+        font-size: 28px; 
+        } 
+    } 
+
+    .links-pages { 
+        display: flex;  
+        flex-wrap: nowrap;
+        list-style: none;
+        @include estilos-caja(0, 0, 15px);
+        @include flexbox (row, null, center);  
+    }
+
+    .accesos {  
+        display: flex;  
+        background-color: transparent;
+        @include estilos-caja(0, 0, 12px);
+        @include flexbox (row, null, center);    
+    }
+    
+    .links-pages li a,
+    .accesos .crear-cuenta,
+    .accesos .acceder {
+        padding: 8px 16px;
+        font-size: 14px;
+        border-radius: 10px;
+        display: inline-flex;
+        height: 38px; 
+        box-sizing: border-box;
+        @include flexbox (null, center, center);  
+    }
+
+    .navbar .container-fluid {
+        display: flex;
+        @include flexbox (null, space-between, center);
+    }
+
+    /*principal*/
+    .hero h2,
+    .destacados h2,
+    .perfil-olfativo h2,
+    .recomendaciones h2,
+    .promociones h2,
+    .nuestra-comunidad h2,
+    .presentacion-perfil-olfativo h2 {
+        font-size: 27px;
+    }    
+
+    .contenedor-principal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "hero"
+            "destacados"
+            "perfil"
+            "recomendaciones"
+            "promociones"
+            "nuestra-comunidad";
+        max-width: 1200px;
+        @include estilos-caja(0 20px, 0 auto 60px auto, 40px);
+    }
+
+    .container h2 {
+        font-size: 27px;
+    }
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        @include estilos-caja(50px, 0, null);
+    }
+
+    .hero { grid-area: hero; }
+    .destacados { grid-area: destacados; }
+    .perfil-olfativo { grid-area: perfil; }
+    .recomendaciones { grid-area: recomendaciones; }
+    .promociones { grid-area: promociones; }
+    .nuestra-comunidad { grid-area: nuestra-comunidad; }
+
+    /*destacados*/
+    .destacados { 
+        display: flex;      
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px;
+        @include estilos-caja(40px 40px 60px 40px, 0, 30px);
+        @include flexbox (column, null, center);
+    }
+
+    .contenedor-destacados {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 100%;
+        align-items: start;
+    }
+
+    .fragancia-destacada {
+        background-color: $color-principal;
+        display: flex;
+        text-align: center;        
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        @include estilos-caja(30px, 0, 20px);
+        @include flexbox (column, null, center);
+    }
+
+    /*otras secciones*/
+    .perfil-olfativo,
+    .recomendaciones,
+    .promociones,
+    .nuestra-comunidad {
+        width: 100%;
+        max-width: 100%;
+        @include estilos-caja(50px 40px, 0, null);
+    }
+
+    /*productos*/
+    .contenedor-productos {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        @include estilos-caja(0 20px, 0 auto 60px auto, 40px);
+        h2 {
+            font-size: 27px;
+        }    
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .contenedor-productos .hero { 
+        width: 100%; 
+        max-width: 100%; 
+        @include estilos-caja(50px, 0, null);
+    }
+   
+   .producto-ysl {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 12px; 
+        @include estilos-caja(40px, 0, 30px);  
+        @include flexbox (column, null, center);      
+    }
+
+   .producto-pr {
+        @extend .producto-ysl;
+        @include estilos-caja(40px, 0, 30px);
+    } 
+
+    .producto-ysl h2,
+    .producto-pr h2 {
+        font-size: 27px;
+    }
+
+    .grilla-productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .contenedor-producto {
+        @extend .fragancia-destacada;
+        @include estilos-caja(30px, 0, 20px);
+    }
+
+    /*footer*/
+    .contenedor-footer {
+        display: flex;
+        padding: 30px;
+        text-align: center;
+        @include flexbox (null, space-evenly, center);    
+        div {
+            text-align: center;
+        }
+        .lista-footer {
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 11px;
+        padding: 30px 30px;
+    }
+}

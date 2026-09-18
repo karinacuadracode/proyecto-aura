@@ -1,0 +1,67 @@
+.presentacion-perfil-olfativo {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    @include estilos-caja(0 20px, 30px auto, null);    
+    h2 {
+        font-size: 26px;
+        text-align: center;
+        padding: 15px;
+        background-color: $color-olfativo-titulo;
+        border-radius: 10px 10px 0 0;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.contenedor-notas-olfativas {
+    display: flex;
+    background-color: $color-nav-fondo;
+    @include estilos-caja(20px, null, 15px);
+    @include flexbox (column, null, center);
+    img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+    figcaption {
+        font-size: 16px;
+        color: $color-texto-general;
+    }
+}
+
+.contenedor-test-olfativo {
+    display: flex;   
+    background-color: $color-olfativo-titulo;
+    border-radius: 0 0 10px 10px;
+    @include estilos-caja(25px 20px, null, 15px);
+    @include flexbox (column, null, center);
+    p {
+        font-size: 20px;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: $color-tipo2;
+        color: $color-tipo1;
+        border-radius: 10px;
+    }
+}
+
+.button-test {
+    color: $color-tipo2;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: $color-boton1-fondo;
+    border-radius: 10px;
+    padding: 8px 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-boton1-hover;
+        color: $color-tipo1;
+    }
+}

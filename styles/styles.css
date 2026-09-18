@@ -1,875 +1,829 @@
+@charset "UTF-8";
 /*Reset basico*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ::selection {
-    background-color: #4e2f7b;
-    color: #F9F6F0;
+  background-color: #4e2f7b;
+  color: #F9F6F0;
 }
 
 body {
-    background-color: #F9F6F0;
-    font-family: "Noto Sans", sans-serif;
-    color: #2A1E17;
-    width: 100%;
+  background-color: #F9F6F0;
+  font-family: "Noto Sans", sans-serif;
+  color: #2A1E17;
+  width: 100%;
 }
 
 /*----------------------header----------------------*/
 .header {
-    background-color: #C8A88D;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 30px;
-    align-items: flex-start;
-    gap: 15px;
-    width: 100%;
+  background-color: #C8A88D;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
 }
-
 .logo img {
-    width: 60px;                  
-    height: auto;
+  width: 60px;
+  height: auto;
 }
-
 .logo h1 {
-    font-family: "Inconsolata", monospace;
-    font-size: 20px;
-    color: #2A1E17;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  color: #2A1E17;
 }
 
 .links-pages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 12px;
 }
-
 .links-pages li a {
-    text-decoration: none;
-    color: #8C3A38;
-    font-weight: 600;
-    font-size: 15px;
-    background-color: #f4eddf;
-    padding: 8px;
-    border-radius: 10px;
-    display: inline-block;
+  text-decoration: none;
+  color: #8C3A38;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #f4eddf;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .links-pages li a:active {
-    color: #ffffff;
-    background-color: #000000;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .links-pages li a:hover,
-.links-pages li a:focus
- {
-    background-color: #e2d3bc;
-    color: #471a19;
+.links-pages li a:focus {
+  background-color: #e2d3bc;
+  color: #471a19;
 }
 
 .accesos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-    padding: 8px;
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  padding: 8px;
+  border-radius: 10px;
+}
+.accesos .crear-cuenta,
+.accesos .acceder {
+  background-color: #8C3A38;
+  color: #f4eddf;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .accesos a:hover,
 .accesos a:focus {
-    color: #e2d3bc;
-    background-color: #471a19;
+  color: #e2d3bc;
+  background-color: #471a19;
 }
 
 .accesos a:active {
-    color: #ffffff;
-    background-color: #000000;
-}
-
-.accesos .crear-cuenta,
-.accesos .acceder {
-    background-color: #8C3A38;
-    color:  #f4eddf;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 13px;
-    padding: 8px;
-    border-radius: 10px;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 /*----------------------main----------------------*/
-.hero { 
-    background-color: #fbf9f7;
-    color: #2A1E17;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    margin: 20px auto;
-    gap: 15px;
-    width: 100%;          
-    max-width: 500px;
+.hero {
+  background-color: #fbf9f7;
+  color: #2A1E17;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 20px auto;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
 }
-
 .hero h2 {
-    font-size: 26px;
-    text-align: center;
+  font-size: 26px;
+  text-align: center;
 }
-
 .hero p {
-    font-size: 16px;
-    color: #654B38;
-    justify-content: space-between;
-    padding: 10px;
-    text-align: center;
+  font-size: 16px;
+  color: #654B38;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
 }
 
 .button-hero {
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
-    background-color: #cfc7c7;
-    border-radius: 10px;
-    padding: 6px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #cfc7c7;
+  border-radius: 10px;
+  padding: 6px;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .button-hero:hover {
-    color: #ffffff;
-    background-color: #5f5b5b;
+  color: #ffffff;
+  background-color: #5f5b5b;
 }
 
 .button-hero:active {
-    background-color: #cfc7c7;
-    color: #000000;
+  background-color: #cfc7c7;
+  color: #000000;
 }
 
 .button-hero::after {
-    content: '🔍';
-    margin-right: 5px;   
+  content: "🔍";
+  margin-right: 5px;
 }
-
 
 /*productos destacados*/
 .destacados {
-    background-color: #353131;
-    padding: 20px;
-    margin: 20px auto;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 92%;
-    border-radius: 12px;
+  background-color: #353131;
+  padding: 20px;
+  margin: 20px auto;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 92%;
+  border-radius: 12px;
 }
 
 .destacados h2,
 .producto-ysl h2,
 .producto-pr h2 {
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  font-size: 26px;
 }
 
 .contenedor-destacados {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;          
-    justify-content: center; 
-    gap: 20px;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
 }
 
 .fragancia-destacada {
-    background-color: #F9F6F0;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    text-align: center;
-    gap: 20px;
-    padding: 30px;         
-    width: 100%;
-    max-width: 100%;
-    border-radius: 12px;         
+  background-color: #F9F6F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
 }
-
 .fragancia-destacada h3 {
-    font-size: 18px; 
+  font-size: 18px;
 }
 
 .fragancia-destacada figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
 }
-
-.fragancia-destacada img {
-    width: 100%;
-    height: auto;
-    max-width: 350px;
+.fragancia-destacada figure img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
 }
-
-.fragancia-destacada figcaption {
-    font-size: 14px;
-    color: #654B38;
-    width: 100%;
-    text-align: center;
+.fragancia-destacada figure figcaption {
+  font-size: 14px;
+  color: #654B38;
+  width: 100%;
+  text-align: center;
 }
 
 /*perfil olfativo*/
 .perfil-olfativo {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    background-color: #f4eddf;
-    flex-direction: column;
-    padding: 30px;
-    gap: 20px;
-    margin: 20px auto;
-    width: 92%;
-    max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: #f4eddf;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  margin: 20px auto;
+  width: 92%;
+  max-width: 500px;
 }
 
 .button-perfil {
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
-    background-color: #cfc7c7;
-    border-radius: 10px;
-    padding: 6px;
-    text-align: center;    
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #cfc7c7;
+  border-radius: 10px;
+  padding: 6px;
+  text-align: center;
 }
 
 .button-perfil:hover {
-    color: #ffffff;
-    background-color: #5f5b5b;
+  color: #ffffff;
+  background-color: #5f5b5b;
 }
 
 .button-perfil:active {
-    background-color: #cfc7c7;
-    color: #000000;
+  background-color: #cfc7c7;
+  color: #000000;
 }
 
 .button-perfil::before {
-    content: '↪';
-    margin-right: 5px;   
+  content: "↪";
+  margin-right: 5px;
 }
 
 /*recomendaciones*/
 .recomendaciones {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    background-color: #f4eddf;
-    flex-direction: column;
-    padding: 30px;
-    gap: 20px;
-    margin: 20px auto;
-    width: 92%;
-    max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: #f4eddf;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  margin: 20px auto;
+  width: 92%;
+  max-width: 500px;
 }
 
 /*promociones*/
 .promociones {
-    background-color: #b18eb9;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
-    gap: 20px;
-    margin: 20px auto;
-    width: 92%;
-    max-width: 500px;
+  background-color: #b18eb9;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  margin: 20px auto;
+  width: 92%;
+  max-width: 500px;
 }
 
 /*comunidad*/
 .nuestra-comunidad {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
-    gap: 20px;
-    margin: 20px auto;
-    width: 92%;
-    max-width: 500px;
-    background-color: #e8d9b9;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  margin: 20px auto;
+  width: 92%;
+  max-width: 500px;
+  background-color: #e8d9b9;
 }
 
 .recomendaciones-usuarios {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-    width: 100%;    
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
 }
 
 .stars-valoracion1::before {
-    content: '⭐⭐⭐⭐⭐';
-    color: #f59e0b;
+  content: "⭐⭐⭐⭐⭐";
+  color: #f59e0b;
 }
 
 .stars-valoracion2::before {
-    content: '⭐⭐⭐⭐';
-    color: #f59e0b;
+  content: "⭐⭐⭐⭐";
+  color: #f59e0b;
 }
 
 .stars-valoracion3::before {
-    content: '⭐⭐⭐';
-    color: #f59e0b;
+  content: "⭐⭐⭐";
+  color: #f59e0b;
 }
 
 .tarjeta-comunidad {
-    max-width: 350px;
+  max-width: 350px;
 }
 
 /*page productos*/
 .contenedor-productos {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .producto-ysl {
-    background-color: #9a9898;
-    padding: 30px;
-    margin: 20px auto;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 92%;
-    max-width: 500px;
-    border-radius: 12px;
+  background-color: #9a9898;
+  padding: 30px;
+  margin: 20px auto;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  max-width: 500px;
+  border-radius: 12px;
 }
 
 .producto-pr {
-    background-color: #997070;
-    padding: 30px;
-    margin: 20px auto;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 92%;
-    max-width: 500px;
-    border-radius: 12px;
+  background-color: #997070;
+  padding: 30px;
+  margin: 20px auto;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  max-width: 500px;
+  border-radius: 12px;
 }
 
 .producto-ysl h2,
 .producto-pr h2 {
-    font-size: 26px;
-    text-align: center;
-    color: #2A1E17;
-    margin-bottom: 15px;
+  font-size: 26px;
+  text-align: center;
+  color: #2A1E17;
+  margin-bottom: 15px;
 }
 
 .grilla-productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-    width: 100%;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
 }
 
 .contenedor-producto {
+  background-color: #F9F6F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.contenedor-producto figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.contenedor-producto figure img {
+  height: auto;
+  width: 100%;
+  max-width: 260px;
+}
+.contenedor-producto figure figcaption {
+  font-size: 14px;
+  color: #654B38;
+  width: 100%;
+  text-align: center;
+}
+
+/*page perfil olfativo*/
+.presentacion-perfil-olfativo {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.presentacion-perfil-olfativo h2 {
+  font-size: 26px;
+  text-align: center;
+  padding: 15px;
+  background-color: #d2c4ac;
+  border-radius: 10px 10px 0 0;
+}
+.presentacion-perfil-olfativo h3 {
+  font-size: 20px;
+}
+
+.contenedor-notas-olfativas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f4eddf;
+}
+.contenedor-notas-olfativas img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.contenedor-notas-olfativas figcaption {
+  font-size: 16px;
+  color: #2A1E17;
+}
+
+.contenedor-test-olfativo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 20px;
+  background-color: #d2c4ac;
+  border-radius: 0 0 10px 10px;
+}
+.contenedor-test-olfativo p {
+  font-size: 20px;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.button-test {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #cfc7c7;
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.button-test:hover {
+  background-color: #5f5b5b;
+  color: #ffffff;
+}
+
+/*page sobre nosotros*/
+.nosotros-presentacion p,
+.nosotros-presentacion figcaption {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button-perfil {
+  background-color: #8C3A38;
+  color: #f4eddf;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 6px;
+  text-align: center;
+  border-color: none;
+}
+
+.button-perfil:hover {
+  background-color: #471a19;
+  color: #C8A88D;
+}
+
+.accordion-nosotros {
+  --bs-accordion-active-bg: #f4eddf;
+  --bs-accordion-active-color: #471a19;
+  --bs-accordion-btn-bg: #f4eddf;
+  --bs-accordion-btn-color: #471a19;
+}
+
+/*----------------------footer----------------------*/
+footer {
+  background-color: #d7c4b2;
+  color: #2A1E17;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+footer h3 {
+  font-size: 15px;
+  color: #2A1E17;
+}
+
+.contenedor-footer {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  min-height: 200px;
+  justify-content: space-around;
+  text-align: center;
+}
+.contenedor-footer .lista-footer {
+  text-decoration: none;
+  color: #8C3A38;
+  list-style: none;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 0;
+}
+
+.copyright {
+  text-align: center;
+  color: #654B38;
+  padding: 30px 30px;
+  font-size: 10px;
+}
+
+/* media queries */
+@media (max-width: 767px) {
+  .carousel-item .fragancia-destacada {
+    height: auto;
+    min-height: 520px;
+    margin: 0 auto;
+  }
+  img {
+    height: 180px;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .destacados {
+    max-width: 95%;
+    width: 95%;
+    margin: 20px auto;
+  }
+  .contenedor-destacados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .grilla-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  /*header*/
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .logo h1 {
+    font-size: 28px;
+  }
+  .links-pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .accesos {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  .links-pages li a,
+  .accesos .crear-cuenta,
+  .accesos .acceder {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    box-sizing: border-box;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*principal*/
+  .hero h2,
+  .destacados h2,
+  .perfil-olfativo h2,
+  .recomendaciones h2,
+  .promociones h2,
+  .nuestra-comunidad h2,
+  .presentacion-perfil-olfativo h2 {
+    font-size: 27px;
+  }
+  .contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "hero" "destacados" "perfil" "recomendaciones" "promociones" "nuestra-comunidad";
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+  }
+  .container h2 {
+    font-size: 27px;
+  }
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 50px;
+  }
+  .hero {
+    grid-area: hero;
+  }
+  .destacados {
+    grid-area: destacados;
+  }
+  .perfil-olfativo {
+    grid-area: perfil;
+  }
+  .recomendaciones {
+    grid-area: recomendaciones;
+  }
+  .promociones {
+    grid-area: promociones;
+  }
+  .nuestra-comunidad {
+    grid-area: nuestra-comunidad;
+  }
+  /*destacados*/
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px 60px 40px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 12px;
+    gap: 30px;
+  }
+  .contenedor-destacados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+    align-items: start;
+  }
+  .fragancia-destacada {
     background-color: #F9F6F0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 20px;
-    padding: 30px;         
+    padding: 30px;
     width: 100%;
     max-width: 100%;
-    border-radius: 12px;   
-}
-
-.contenedor-producto figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-}
-
-.contenedor-producto img {
-    height: auto;
-    width: 100%;
-    max-width: 260px;
-}
-
-.contenedor-producto figcaption {
-    font-size: 14px;
-    color: #654B38;
-    width: 100%;
-    text-align: center;
-}
-
-/*page perfil olfativo*/
-.presentacion-perfil-olfativo {
-    width: 100%;
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.presentacion-perfil-olfativo h2 {
-    font-size: 26px;
-    text-align: center;
-    padding: 15px;
-    background-color: #d2c4ac;
-    border-radius: 10px 10px 0 0;
-}
-
-.presentacion-perfil-olfativo h3 {
-    font-size: 20px;
-}
-
-.contenedor-notas-olfativas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
-    background-color: #f4eddf;
-}
-
-.contenedor-notas-olfativas img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
-}
-
-.contenedor-notas-olfativas figcaption {
-    font-size: 16px;
-    color: #2A1E17;
-}
-
-.contenedor-test-olfativo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 25px 20px;
-    background-color: #d2c4ac;
-    border-radius: 0 0 10px 10px;
-}
-
-.button-test {
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
-    background-color: #cfc7c7;
+    margin: 0;
     border-radius: 10px;
-    padding: 8px 16px;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-}
-
-.button-test:hover {
-    background-color: #5f5b5b;
-    color: #ffffff;
-}
-
-.contenedor-test-olfativo p {
+  }
+  /*otras secciones*/
+  .perfil-olfativo,
+  .recomendaciones,
+  .promociones,
+  .nuestra-comunidad {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 50px 40px;
+  }
+  /*productos*/
+  .contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+  }
+  .contenedor-productos h2 {
+    font-size: 27px;
+  }
+  .contenedor-productos h3 {
     font-size: 20px;
+  }
+  .contenedor-productos .hero {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 50px;
+  }
+  .producto-ysl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    border-radius: 12px;
+    gap: 30px;
+  }
+  .producto-pr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    border-radius: 12px;
+    gap: 30px;
+  }
+  .producto-ysl h2,
+  .producto-pr h2 {
+    font-size: 27px;
+  }
+  .grilla-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+    align-items: stretch;
+  }
+  .contenedor-producto {
+    background-color: #F9F6F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 20px;
-    padding: 20px;
-    background-color: #000000;
-    color: #ffffff;
-    border-radius: 10px;
-}
-
-/*page sobre nosotros*/
-.nosotros-presentacion p, 
-.nosotros-presentacion figcaption {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.button-perfil {
-    background-color:#8C3A38;
-    color: #f4eddf;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 10px;
-    padding: 6px;
-    text-align: center;
-    border-color: none;   
-}
-
-.button-perfil:hover {
-    background-color: #471a19; 
-    color: #C8A88D;
-}
-
-.accordion-nosotros {
-    --bs-accordion-active-bg: #f4eddf;
-    --bs-accordion-active-color: #471a19;
-    --bs-accordion-btn-bg: #f4eddf;
-    --bs-accordion-btn-color: #471a19;
-}
-
-/*----------------------footer----------------------*/
-footer {
-    background-color: #d7c4b2;
-    color: #2A1E17;
-    display: flex;
-    flex-direction: column;
+    padding: 30px;
     width: 100%;
-    text-align: center;
-}
-
-.contenedor-footer {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    height: 100%;
+  }
+  /*footer*/
+  .contenedor-footer {
     display: flex;
+    justify-content: space-evenly;
     padding: 30px;
     align-items: center;
-    min-height: 200px;
-    justify-content: space-around;
     text-align: center;
-}
-
-.lista-footer {
-    text-decoration: none;
-    color: #8C3A38;
+  }
+  .contenedor-footer div {
+    text-align: center;
+  }
+  .contenedor-footer .lista-footer {
+    padding: 0;
     list-style: none;
-    font-size: 14px;
+  }
+  .copyright {
     text-align: center;
-    padding-left: 0;
-}
-
-footer h3 {
-    font-size: 15px;
-    color: #2A1E17;
-}
-
-.copyright {
-    text-align: center;
-    color: #654B38;
+    font-size: 11px;
     padding: 30px 30px;
-    font-size: 10px;
+  }
 }
 
-
-/* media queries */
-@media (max-width: 767px) {
-    .carousel-item .fragancia-destacada {
-        height: auto;
-        min-height: 520px;
-        margin: 0 auto;
-    }
-
-    .carousel-item .fragancia-destacada img {
-        height: 180px;
-        object-fit: contain;
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .destacados {
-        max-width: 95%;
-        width: 95%;
-        margin: 20px auto;
-    }    
-
-    .contenedor-destacados {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    .grilla-productos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-} 
-
-@media (min-width: 1024px) {
-    
-    /*header*/
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .logo h1 {
-        font-size: 28px;
-    }
-
-    .links-pages {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 15px;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .accesos {
-        display: flex;
-        flex-direction: row;
-        gap: 12px;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-    }
-    
-    .links-pages li a,
-    .accesos .crear-cuenta,
-    .accesos .acceder {
-        padding: 8px 16px;
-        font-size: 14px;
-        border-radius: 10px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        height: 38px; 
-        box-sizing: border-box;
-    }
-
-    .navbar .container-fluid {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /*principal*/
-    .hero h2,
-    .destacados h2,
-    .perfil-olfativo h2,
-    .recomendaciones h2,
-    .promociones h2,
-    .nuestra-comunidad h2,
-    .presentacion-perfil-olfativo h2 {
-        font-size: 27px;
-    }    
-
-    .contenedor-principal {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "hero"
-            "destacados"
-            "perfil"
-            "recomendaciones"
-            "promociones"
-            "nuestra-comunidad";
-        gap: 40px;
-        max-width: 1200px;
-        margin: 0 auto 60px auto;
-        padding: 0 20px;
-    }
-
-    .container h2 {
-        font-size: 27px;
-    }
-
-    .hero {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 50px;
-    }
-
-    .hero { grid-area: hero; }
-    .destacados { grid-area: destacados; }
-    .perfil-olfativo { grid-area: perfil; }
-    .recomendaciones { grid-area: recomendaciones; }
-    .promociones { grid-area: promociones; }
-    .nuestra-comunidad { grid-area: nuestra-comunidad; }
-
-    /*destacados*/
-    .destacados { 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 40px 60px 40px;
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        border-radius: 12px;
-        gap: 30px;
-    }
-
-    .contenedor-destacados {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-        width: 100%;
-        align-items: start;
-    }
-
-    .fragancia-destacada {
-        background-color: #F9F6F0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        padding: 30px;
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        border-radius: 10px;
-    }
-
-    /*otras secciones*/
-    .perfil-olfativo,
-    .recomendaciones,
-    .promociones,
-    .nuestra-comunidad {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 50px 40px;
-    }
-
-    /*productos*/
-    .contenedor-productos {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        max-width: 1200px;
-        margin: 0 auto 60px auto;
-        padding: 0 20px;
-    }
-
-    .contenedor-productos .hero {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 50px;
-    }
-
-    .contenedor-productos h2 {
-        font-size: 27px;
-    }
-
-    .contenedor-producto h3 {
-        font-size: 20px;
-    }    
-
-   .producto-ysl {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0;
-        border-radius: 12px;
-        gap: 30px;
-    }
-
-   .producto-pr {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0;
-        border-radius: 12px;
-        gap: 30px;
-    } 
-
-    .producto-ysl h2,
-    .producto-pr h2 {
-        font-size: 27px;
-    }
-
-    .grilla-productos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-        width: 100%;
-        align-items: stretch;
-    }
-
-    .contenedor-producto {
-        background-color: #F9F6F0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        padding: 30px;
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        border-radius: 10px;
-        height: 100%;
-    }
-
-    /*footer*/
-    .contenedor-footer {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 30px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contenedor-footer div {
-        text-align: center;
-    }
-
-    .lista-footer {
-        padding: 0;
-        list-style: none;
-    }
-
-    .copyright {
-        text-align: center;
-        font-size: 11px;
-        padding: 30px 30px;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

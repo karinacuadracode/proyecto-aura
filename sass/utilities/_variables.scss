@@ -1,0 +1,67 @@
+// paleta de colores
+// general base
+$color-principal: #F9F6F0;
+$color-texto-general: #2A1E17;
+$color-texto-secundario: #654B38;
+$color-tipo1: #FFFFFF;
+$color-tipo2: #000000;
+$color-seleccion-texto: #4E2F7B;
+
+// header
+$color-header: #C8A88D;
+
+// navegacion
+$color-nav-fondo: #F4EDDF;
+$color-nav-texto: #8C3A38;
+$color-nav-acento: #471A19;
+$color-nav-hover: #E2D3BC;
+
+// botones tipo 1 (conocer más, ver mi resultado test)
+$color-boton1-fondo: #CFC7C7;
+$color-boton1-hover: #5F5B5B;
+
+// botones tipo 2 (paginas)
+$color-boton2-fondo: $color-nav-texto;
+$color-boton2-texto: $color-nav-fondo;
+
+// botones tipo 3 (accesos)
+$color-boton3-fondo: $color-nav-texto;
+$color-boton3-texto: $color-nav-fondo;
+
+// presentaciones de h1 p
+$color-titulo-h1: $color-texto-general;
+
+// main
+$color-hero: #FBF9F7;
+
+// destacados
+$color-destacado: #353131;
+
+// productos
+$color-fondo-producto1: #997070;
+$color-fondo-producto2: #9A9898;
+
+// armar mi perfil olfativo 
+$color-olfativo-titulo: #D2C4AC;
+
+// perfil olfativo 
+$color-perfil-fondo: $color-nav-fondo;
+
+// nosotros 
+$color-nosotros-fondo: $color-nav-fondo;
+
+// contacto
+$color-contacto-fondo: $color-nav-fondo;
+
+// recomendaciones rápidas
+$color-recomendaciones-fondo: $color-nav-fondo;
+
+// promociones 
+$color-promocion: #B18EB9;
+
+// comunidad
+$color-comunidad: #E8D9B9;
+$color-valoracion: #F59E0B;
+
+// footer 
+$color-footer: #D7C4B2;
