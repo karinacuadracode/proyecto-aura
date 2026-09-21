@@ -1,3 +1,6 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
 .contenedor-productos {
     width: 100%;
     padding: 0;
@@ -35,8 +38,14 @@
 }
 
 .contenedor-producto {
-    @extend .fragancia-destacada;
-    @include estilos-caja(30px, null, 20px);     
+    background-color: $color-principal;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    @include estilos-caja(30px, null, 20px);
+    @include flexbox(column, null, center);
 }
 
 .contenedor-producto figure {

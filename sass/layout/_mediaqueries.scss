@@ -1,3 +1,6 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
 /* media queries */
 @media (max-width: 767px) {
     .carousel-item .fragancia-destacada {
@@ -24,7 +27,9 @@
         gap: 20px;
     }
     .grilla-productos {
-    @extend .contenedor-destacados;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 } 
 
@@ -187,8 +192,12 @@
     }
 
    .producto-pr {
-        @extend .producto-ysl;
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 12px;
         @include estilos-caja(40px, 0, 30px);
+        @include flexbox (column, null, center);
     } 
 
     .producto-ysl h2,
@@ -205,8 +214,14 @@
     }
 
     .contenedor-producto {
-        @extend .fragancia-destacada;
+        background-color: $color-principal;
+        display: flex;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
         @include estilos-caja(30px, 0, 20px);
+        @include flexbox (column, null, center);
     }
 
     /*footer*/
