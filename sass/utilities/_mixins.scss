@@ -9,3 +9,11 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+// animacion para botones
+@mixin boton-presionable($profundidad: 6px, $duracion: 0.15s) {
+    transition: transform $duracion ease;
+    &:active {
+        transform: translateY($profundidad);
+    }
+}

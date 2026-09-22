@@ -137,6 +137,10 @@ body {
   padding: 6px;
   text-align: center;
   transition: background-color 0.3s ease;
+  transition: transform 0.15s ease;
+}
+.button-hero:active {
+  transform: translateY(6px);
 }
 .button-hero:hover {
   color: #FFFFFF;
@@ -243,6 +247,10 @@ body {
   border-radius: 10px;
   padding: 6px;
   text-align: center;
+  transition: transform 0.15s ease;
+}
+.button-perfil:active {
+  transform: translateY(6px);
 }
 .button-perfil:hover {
   color: #FFFFFF;
@@ -510,6 +518,12 @@ footer h3 {
   padding: 8px 16px;
   text-align: center;
   border: none;
+  transition: transform 0.15s ease;
+}
+.button-test:active {
+  transform: translateY(6px);
+}
+.button-test {
   cursor: pointer;
 }
 .button-test:hover {
@@ -523,26 +537,11 @@ footer h3 {
   margin: 20px 0;
 }
 
-.button-perfil {
-  background-color: #8C3A38;
-  color: #F4EDDF;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 10px;
-  padding: 6px;
-  text-align: center;
-  border-color: none;
-}
-.button-perfil:hover {
-  background-color: #471A19;
-  color: #C8A88D;
-}
-
 .accordion-nosotros {
-  --bs-accordion-active-bg: $color-nav-fondo;
-  --bs-accordion-active-color: $color-nav-acento;
-  --bs-accordion-btn-bg: $color-nav-fondo;
-  --bs-accordion-btn-color: $color-nav-acento;
+  --bs-accordion-active-bg: #F4EDDF;
+  --bs-accordion-active-color: #471A19;
+  --bs-accordion-btn-bg: #F4EDDF;
+  --bs-accordion-btn-color: #471A19;
 }
 
 /* media queries */
@@ -551,11 +550,6 @@ footer h3 {
     height: auto;
     min-height: 520px;
     margin: 0 auto;
-  }
-  img {
-    height: 180px;
-    object-fit: contain;
-    width: 100%;
   }
 }
 @media (min-width: 768px) {

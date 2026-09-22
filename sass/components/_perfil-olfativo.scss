@@ -62,6 +62,7 @@
     padding: 8px 16px;
     text-align: center;
     border: none;
+    @include boton-presionable();
     cursor: pointer;
     &:hover {
         background-color: $color-boton1-hover;
