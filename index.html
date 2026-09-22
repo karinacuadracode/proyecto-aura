@@ -133,11 +133,63 @@
         <section class="recomendaciones">
             <h2>Recomendaciones rápidas</h2>
             <p>Según clima, actividad, precios.</p>
+
+            <div class="accordion shadow-sm accordion-recomendaciones" id="accordionRecomendaciones">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingClima">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClima" aria-expanded="false" aria-controls="collapseClima">
+                            Por clima
+                        </button>
+                    </h3>
+                    <div id="collapseClima" class="accordion-collapse collapse" aria-labelledby="headingClima" data-bs-parent="#accordionRecomendaciones">
+                        <div class="accordion-body text-center text-secondary">
+                            Para climas cálidos recomendamos fragancias cítricas y frescas. <br>Para los climas más fríos, las fragancias más dulces o amaderadas se lucen mucho más.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingActividad">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActividad" aria-expanded="false" aria-controls="collapseActividad">
+                            Según actividad
+                        </button>
+                    </h3>
+                    <div id="collapseActividad" class="accordion-collapse collapse" aria-labelledby="headingActividad" data-bs-parent="#accordionRecomendaciones">
+                        <div class="accordion-body text-center text-secondary">
+                            Para deportes o actividades al aire libre, lo mejor son las fragancias frescas y livianas, que acompañan sin sobrecargar.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingPrecio">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrecio" aria-expanded="false" aria-controls="collapsePrecio">
+                            Por precio
+                        </button>
+                    </h3>
+                    <div id="collapsePrecio" class="accordion-collapse collapse" aria-labelledby="headingPrecio" data-bs-parent="#accordionRecomendaciones">
+                        <div class="accordion-body text-center text-secondary">
+                            Set Paco Rabanne: fragancia, versión mini y llavero de regalo por $270.000, en 12 cuotas sin interés con tarjetas bancarias VISA.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="promociones">
             <h2>Promociones</h2>
-            <p>Contamos con descuentos en tarjetas bancarias, cuotas sin interés y 10% de descuento pagando con transferencia.</p>
+                <ul class="lista-promociones">
+                    <li>
+                        <span class="titulo-promo">Financiación 💳</span>
+                        <span class="descripcion-promo">Cuotas sin interés con tarjetas bancarias VISA y Mastercard.</span>
+                    </li>
+                    <li>
+                        <span class="titulo-promo">Beneficios 📱</span>
+                        <span class="descripcion-promo">Reintegros pagando con MODO.</span>
+                    </li>
+                    <li>
+                        <span class="titulo-promo">Ahorro 💸</span>
+                        <span class="descripcion-promo">10% de descuento abonando por transferencia.</span>
+                    </li>
+                </ul>
         </section>
 
         <section class="nuestra-comunidad">

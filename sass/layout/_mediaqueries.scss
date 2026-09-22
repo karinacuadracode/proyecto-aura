@@ -8,6 +8,21 @@
         min-height: 520px;
         margin: 0 auto;
     }
+    .container h2 {
+        font-size: 22px;
+    }
+    .container h3 {
+        font-size: 16px;
+    }
+    .container p {
+        font-size: 14px;
+    }
+    .presentacion-perfil-olfativo h2 {
+        font-size: 20px;
+    }
+    .contenedor-test-olfativo p {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -157,6 +172,10 @@
         @include estilos-caja(50px 40px, 0, null);
     }
 
+    .promociones {
+    padding: 20px 40px;
+    }    
+    
     /*productos*/
     .contenedor-productos {
         display: flex;

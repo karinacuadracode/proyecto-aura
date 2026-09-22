@@ -43,7 +43,7 @@ body {
 }
 .logo h1 {
   font-family: "Inconsolata", monospace;
-  font-size: 20px;
+  font-size: 26px;
   color: #2A1E17;
 }
 
@@ -279,6 +279,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.recomendaciones p::after {
+  content: "⤵️";
+}
+
+.accordion-recomendaciones {
+  width: 100%;
+  --bs-accordion-btn-bg: #D2C4AC;
+  --bs-accordion-active-bg: #D2C4AC;
+  --bs-accordion-btn-color: #2A1E17;
+  --bs-accordion-active-color: #2A1E17;
+}
 
 /*promociones*/
 .promociones {
@@ -291,8 +302,28 @@ body {
   margin: 20px auto;
   gap: 20px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.lista-promociones {
+  list-style: none;
+  text-align: center;
+}
+.lista-promociones li {
+  margin-bottom: 20px;
+}
+.lista-promociones li:last-child {
+  margin-bottom: 0;
+}
+.lista-promociones .titulo-promo {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+}
+.lista-promociones .descripcion-promo {
+  display: block;
+  font-size: 15px;
 }
 
 /*comunidad*/
@@ -551,6 +582,21 @@ footer h3 {
     min-height: 520px;
     margin: 0 auto;
   }
+  .container h2 {
+    font-size: 22px;
+  }
+  .container h3 {
+    font-size: 16px;
+  }
+  .container p {
+    font-size: 14px;
+  }
+  .presentacion-perfil-olfativo h2 {
+    font-size: 20px;
+  }
+  .contenedor-test-olfativo p {
+    font-size: 16px;
+  }
 }
 @media (min-width: 768px) {
   .destacados {
@@ -708,6 +754,9 @@ footer h3 {
     max-width: 100%;
     padding: 50px 40px;
     margin: 0;
+  }
+  .promociones {
+    padding: 20px 40px;
   }
   /*productos*/
   .contenedor-productos {
