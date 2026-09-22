@@ -64,6 +64,14 @@ body {
   border-radius: 10px;
   display: inline-block;
 }
+.links-pages li a:hover, .links-pages li a:focus {
+  background-color: #E2D3BC;
+  color: #471A19;
+}
+.links-pages li a:active {
+  color: #FFFFFF;
+  background-color: #000000;
+}
 
 .accesos {
   display: flex;
@@ -82,6 +90,17 @@ body {
   font-size: 13px;
   padding: 8px;
   border-radius: 10px;
+}
+.accesos .crear-cuenta:hover, .accesos .crear-cuenta:focus,
+.accesos .acceder:hover,
+.accesos .acceder:focus {
+  color: #E2D3BC;
+  background-color: #471A19;
+}
+.accesos .crear-cuenta:active,
+.accesos .acceder:active {
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
 .hero {
