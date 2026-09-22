@@ -11,8 +11,11 @@
 }
 
 // animacion para botones
-@mixin boton-presionable($profundidad: 6px, $duracion: 0.15s) {
+@mixin boton-presionable($profundidad: 6px, $duracion: 0.15s, $escala: 1.05) {
     transition: transform $duracion ease;
+    &:hover {
+        transform: scale($escala);
+    }
     &:active {
         transform: translateY($profundidad);
     }

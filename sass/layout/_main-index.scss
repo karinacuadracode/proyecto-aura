@@ -41,7 +41,7 @@
         color: $color-tipo2; 
     }
     &::after {
-        content: '🔍'; 
+        content: '🔎'; 
         margin-right: 5px;  
     }    
 }
@@ -134,8 +134,8 @@
         background-color: $color-boton1-fondo;
         color: $color-tipo2;
     }
-    &::before {
-        content: '↪';
+    &::after {
+        content: ' ➡️';
         margin-right: 5px;   
     }
 }
