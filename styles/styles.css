@@ -325,15 +325,20 @@ body {
   list-style: none;
   text-align: left;
 }
-.lista-promociones li {
+.lista-promociones .list-group-item {
+  background-color: transparent;
+  border-color: rgba(42, 30, 23, 0.15);
+  padding: 0 0 20px 0;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 15px;
 }
-.lista-promociones li:last-child {
+.lista-promociones .list-group-item:last-child {
+  border-bottom: none;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 .lista-promociones strong {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 

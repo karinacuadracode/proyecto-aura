@@ -175,15 +175,20 @@
 .lista-promociones {
     list-style: none;
     text-align: left;
-    li {
+    .list-group-item {
+        background-color: transparent;
+        border-color: rgba($color-texto-general, 0.15);
+        padding: 0 0 20px 0;
         margin-bottom: 20px;
-        font-size: 18px;
+        font-size: 15px;
         &:last-child {
+            border-bottom: none;
             margin-bottom: 0;
+            padding-bottom: 0;
         }
     }
     strong {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
     }
 }
