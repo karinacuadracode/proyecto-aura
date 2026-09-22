@@ -64,14 +64,6 @@ body {
   border-radius: 10px;
   display: inline-block;
 }
-.links-pages:active {
-  color: #FFFFFF;
-  background-color: #000000;
-}
-.links-pages:hover, .links-pages:focus {
-  background-color: #E2D3BC;
-  color: #471A19;
-}
 
 .accesos {
   display: flex;
@@ -90,14 +82,6 @@ body {
   font-size: 13px;
   padding: 8px;
   border-radius: 10px;
-}
-.accesos:hover, .accesos:focus {
-  color: #E2D3BC;
-  background-color: #471A19;
-}
-.accesos:active {
-  color: #FFFFFF;
-  background-color: #000000;
 }
 
 .hero {
