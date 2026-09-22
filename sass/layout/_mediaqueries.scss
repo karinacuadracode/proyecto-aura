@@ -23,6 +23,14 @@
     .contenedor-test-olfativo p {
         font-size: 16px;
     }
+    .contenedor-producto {
+        h3 {
+            font-size: 16px;
+        }
+        figcaption {
+            font-size: 13px;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -196,26 +204,20 @@
         @include estilos-caja(50px, 0, null);
     }
    
-   .producto-ysl {
-        display: flex;
-        width: 100%;
-        max-width: 1200px;
-        border-radius: 12px; 
-        @include estilos-caja(40px, 0, 30px);  
-        @include flexbox (column, null, center);      
-    }
-
-   .producto-pr {
+    .producto-ysl,
+    .producto-pr,
+    .producto-set {
         display: flex;
         width: 100%;
         max-width: 1200px;
         border-radius: 12px;
         @include estilos-caja(40px, 0, 30px);
         @include flexbox (column, null, center);
-    } 
+    }
 
     .producto-ysl h2,
-    .producto-pr h2 {
+    .producto-pr h2,
+    .producto-set h2 {
         font-size: 27px;
     }
 

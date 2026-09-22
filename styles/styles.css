@@ -434,7 +434,7 @@ footer h3 {
   padding: 0;
 }
 
-.producto-ysl, .producto-pr {
+.producto-ysl, .producto-set, .producto-pr {
   background-color: #9A9898;
   display: flex;
   width: 92%;
@@ -455,7 +455,11 @@ footer h3 {
   background-color: #997070;
 }
 
-.producto-ysl h2,
+.producto-set {
+  background-color: #B18EB9;
+}
+
+.producto-ysl h2, .producto-set h2,
 .producto-pr h2 {
   font-size: 26px;
   text-align: center;
@@ -621,6 +625,12 @@ footer h3 {
   }
   .contenedor-test-olfativo p {
     font-size: 16px;
+  }
+  .contenedor-producto h3 {
+    font-size: 16px;
+  }
+  .contenedor-producto figcaption {
+    font-size: 13px;
   }
 }
 @media (min-width: 768px) {
@@ -804,18 +814,9 @@ footer h3 {
     padding: 50px;
     margin: 0;
   }
-  .producto-ysl {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    border-radius: 12px;
-    padding: 40px;
-    margin: 0;
-    gap: 30px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .producto-pr {
+  .producto-ysl,
+  .producto-pr,
+  .producto-set {
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -827,7 +828,8 @@ footer h3 {
     align-items: center;
   }
   .producto-ysl h2,
-  .producto-pr h2 {
+  .producto-pr h2,
+  .producto-set h2 {
     font-size: 27px;
   }
   .grilla-productos {
