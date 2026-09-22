@@ -8,12 +8,14 @@
 //principal
 @use "layout/header";
 @use "layout/main-index";
-@use "layout/footer";
 
 //pages
 @use "components/productos";
 @use "components/perfil-olfativo";
 @use "components/sobre-nosotros";
+
+//footer
+@use "layout/footer";
 
 //media queries
 @use "layout/mediaqueries";
