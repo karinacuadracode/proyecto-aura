@@ -1,8 +1,10 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+@use "sass:color";
 
 .hero {
     background-color: $color-hero;
+    background-image: linear-gradient(135deg, $color-hero, $color-nav-fondo 35%, $color-nav-hover 50%, $color-nav-fondo 65%, $color-hero);
     color: $color-texto-general;
     display: flex; 
     width: 100%;

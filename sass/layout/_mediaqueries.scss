@@ -129,9 +129,12 @@
     }
 
     .hero {
-        width: 100%;
-        max-width: 100%;
-        @include estilos-caja(50px, 0, null);
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        margin-top: 30px;
+        padding: 50px;
     }
 
     .hero { grid-area: hero; }
@@ -198,12 +201,6 @@
         }
     }
 
-    .contenedor-productos .hero { 
-        width: 100%; 
-        max-width: 100%; 
-        @include estilos-caja(50px, 0, null);
-    }
-   
     .producto-ysl,
     .producto-pr,
     .producto-set {
