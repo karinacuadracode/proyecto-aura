@@ -149,11 +149,6 @@
     max-width: 500px;
     @include estilos-caja(30px, 20px auto, 20px);
     @include flexbox (column, space-between, center);
-    p {
-        &::after {
-            content: '⤵️';
-        }
-    }
 }
 
 .accordion-recomendaciones {
@@ -171,27 +166,25 @@
     text-align: center;
     width: 92%;
     max-width: 500px;
-    @include estilos-caja(30px, 20px auto, 20px);
+    padding: 10px 30px 30px;
+    margin: 20px auto;
+    gap: 20px;
     @include flexbox(column, flex-start, center);
 }
 
 .lista-promociones {
     list-style: none;
-    text-align: center;
+    text-align: left;
     li {
         margin-bottom: 20px;
+        font-size: 18px;
         &:last-child {
             margin-bottom: 0;
         }
     }
-    .titulo-promo {
-        display: block;
-        font-weight: 600;
+    strong {
         font-size: 18px;
-    }
-    .descripcion-promo {
-        display: block;
-        font-size: 15px;
+        font-weight: 600;
     }
 }
 

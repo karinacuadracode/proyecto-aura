@@ -2,10 +2,6 @@
 @use "../utilities/mixins" as *;
 
 .header {
-  background-color: $color-header;
-}
-
-.header {
     background-color: $color-header;
     @include flexbox (column, flex-start, flex-start);
     width: 100%;
