@@ -126,6 +126,14 @@ p {
   text-align: center;
 }
 
+.hero-index {
+  background-image: linear-gradient(135deg, transparent 30%, rgba(226, 211, 188, 0.6) 50%, transparent 70%), url("../images/adicionales/banner-principal.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  justify-content: center;
+}
+
 .button-hero {
   color: #000000;
   text-decoration: none;
@@ -644,6 +652,17 @@ footer h3 {
     font-size: 18px;
   }
 }
+@media (max-width: 1023px) {
+  .hero-index {
+    max-width: 100%;
+    background-size: cover, 100% auto;
+    background-position: center, top center;
+    background-repeat: no-repeat;
+    background-color: #F9F6F0;
+    padding-top: 32vw;
+    min-height: auto;
+  }
+}
 @media (min-width: 768px) {
   .destacados {
     max-width: 95%;
@@ -714,6 +733,12 @@ footer h3 {
     margin-right: calc(50% - 50vw);
     margin-top: 30px;
     padding: 50px;
+  }
+  .hero-index {
+    min-height: 500px;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-color: #F9F6F0;
   }
   .hero {
     grid-area: hero;

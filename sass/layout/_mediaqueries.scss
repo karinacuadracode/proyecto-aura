@@ -28,6 +28,18 @@
     }
 }
 
+@media (max-width: 1023px) {
+    .hero-index {
+        max-width: 100%;
+        background-size: cover, 100% auto;
+        background-position: center, top center;
+        background-repeat: no-repeat;
+        background-color: $color-principal;
+        padding-top: 32vw;
+        min-height: auto;
+    }
+}
+
 @media (min-width: 768px) {
     .destacados {
         max-width: 95%;
@@ -103,6 +115,13 @@
         margin-right: calc(50% - 50vw);
         margin-top: 30px;
         padding: 50px;
+    }
+
+    .hero-index {
+        min-height: 500px;
+        background-size: cover, contain;
+        background-repeat: no-repeat;
+        background-color: $color-principal;
     }
 
     .hero { grid-area: hero; }
