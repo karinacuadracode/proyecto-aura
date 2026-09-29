@@ -20,7 +20,7 @@ Ver en:
 
 * HTML5
 * CSS3 (Estilos propios y Media Queries para diseño responsive)
-* Bootstrap 5 (Grillas y barra de navegación)
+* Bootstrap
 * Git y GitHub
 
 **Autora:** Karina Cuadra
