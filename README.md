@@ -1,6 +1,6 @@
 # Proyecto Aura - Universo Olfativo
 
-Sitio web multipágina desarrollado como pre-entrega para el curso de Desarrollo Web de Coderhouse, enfocado en un catálogo digital de perfumería y asesoría olfativa.
+Sitio web multipágina desarrollado para el curso de Desarrollo Web de Coderhouse, enfocado en un catálogo digital de perfumería y asesoría olfativa.
 
 ## Sitio en línea
 Ver en: 
