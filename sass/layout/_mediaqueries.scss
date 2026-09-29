@@ -28,7 +28,7 @@
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
     .hero-index {
         background-image: linear-gradient(135deg, $color-hero, $color-nav-fondo 35%, $color-nav-hover 50%, $color-nav-fondo 65%, $color-hero);
         min-height: auto;
@@ -36,6 +36,13 @@
 }
 
 @media (min-width: 768px) {
+    .hero-index {
+        max-width: 100%;
+        min-height: 350px;
+        background-size: cover, contain;
+        background-repeat: no-repeat;
+        background-color: $color-principal;
+    }
     .destacados {
         max-width: 95%;
         width: 95%;
@@ -114,9 +121,6 @@
 
     .hero-index {
         min-height: 500px;
-        background-size: cover, contain;
-        background-repeat: no-repeat;
-        background-color: $color-principal;
     }
 
     .hero { grid-area: hero; }

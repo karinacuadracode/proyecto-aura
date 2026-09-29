@@ -652,13 +652,20 @@ footer h3 {
     font-size: 18px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .hero-index {
     background-image: linear-gradient(135deg, #FBF9F7, #F4EDDF 35%, #E2D3BC 50%, #F4EDDF 65%, #FBF9F7);
     min-height: auto;
   }
 }
 @media (min-width: 768px) {
+  .hero-index {
+    max-width: 100%;
+    min-height: 350px;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-color: #F9F6F0;
+  }
   .destacados {
     max-width: 95%;
     width: 95%;
@@ -731,9 +738,6 @@ footer h3 {
   }
   .hero-index {
     min-height: 500px;
-    background-size: cover, contain;
-    background-repeat: no-repeat;
-    background-color: #F9F6F0;
   }
   .hero {
     grid-area: hero;
