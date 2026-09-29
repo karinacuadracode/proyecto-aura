@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 @mixin estilos-caja($padding, $margin, $gap) {
     padding: $padding;
     margin: $margin;
@@ -18,5 +20,16 @@
     }
     &:active {
         transform: translateY($profundidad);
+    }
+}
+
+@mixin imagen-producto($size: $size-img) {
+    width: 100%;
+    max-width: $size;
+    height: $size;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.08);
     }
 }

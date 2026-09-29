@@ -51,6 +51,11 @@
     @include flexbox (column, null, center);
 }
 
+.destacados .carousel {
+    width: 100%;
+    max-width: 800px;
+}
+
 .destacados h2, 
 .producto-ysl h2, 
 .producto-pr h2 {
@@ -68,14 +73,6 @@
     font-size: $size-h2;
 }
 
-.contenedor-destacados { 
-    display: flex; 
-    flex-wrap: wrap;   
-    width: 100%;
-    @include estilos-caja(0px, 0px, 20px);
-    @include flexbox(column, center, null); 
-}
-
 .fragancia-destacada { 
     background-color: $color-principal; 
     display: flex; 
@@ -83,10 +80,11 @@
     width: 100%; 
     max-width: 100%; 
     border-radius: 12px; 
-    @include estilos-caja(30px, null, 20px);
+    @include estilos-caja(20px, null, 20px);
     @include flexbox(column, null, center);
     h3 {
         font-size: $size-h3;
+        min-height: 50px;
     }
 }
 
@@ -96,9 +94,7 @@
     gap: 15px;
     width: 100%;
     img {
-        width: 100%;
-        height: auto;
-        max-width: 350px;
+        @include imagen-producto;
     }
     figcaption {
         font-size: $size-chico;

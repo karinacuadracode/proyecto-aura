@@ -50,7 +50,7 @@
     width: 100%;
     max-width: 100%;
     border-radius: 12px;
-    @include estilos-caja(30px, null, 20px);
+    @include estilos-caja(20px, null, 20px);
     @include flexbox(column, null, center);
     h3 {
         font-size: $size-h3;
@@ -63,14 +63,19 @@
     gap: 15px;
     width: 100%;
     img {
-        height: auto;
-        width: 100%;
-        max-width: 260px;
+        @include imagen-producto;
     }
+    
     figcaption {
         font-size: $size-chico;
         color: $color-texto-secundario;
         width: 100%;
         text-align: center;
     }
+}
+
+.producto-set .contenedor-producto figure img {
+    object-fit: contain;
+    background-color: $color-tipo1;
+    border-radius: 8px;
 }

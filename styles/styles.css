@@ -80,45 +80,33 @@ p {
   background-color: #000000;
 }
 
+/* Se usará más adelante
 .accesos {
-  display: flex;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  gap: 15px;
-}
-.accesos .crear-cuenta,
-.accesos .acceder {
-  background-color: #8C3A38;
-  color: #F4EDDF;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 13px;
-  padding: 8px;
-  border-radius: 10px;
-  transition: transform 0.15s ease;
-}
-.accesos .crear-cuenta:hover,
-.accesos .acceder:hover {
-  transform: scale(1.05);
-}
-.accesos .crear-cuenta:active,
-.accesos .acceder:active {
-  transform: translateY(6px);
-}
-.accesos .crear-cuenta:hover, .accesos .crear-cuenta:focus,
-.accesos .acceder:hover,
-.accesos .acceder:focus {
-  color: #E2D3BC;
-  background-color: #471A19;
-}
-.accesos .crear-cuenta:active,
-.accesos .acceder:active {
-  color: #FFFFFF;
-  background-color: #000000;
-}
-
+    display: flex;
+    border-radius: 10px;
+    @include flexbox (null, center, center);
+    @include estilos-caja(8px, null, 15px);
+    .crear-cuenta,
+    .acceder {
+        background-color: $color-nav-texto;
+        color: $color-nav-fondo;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 8px;
+        border-radius: 10px;
+        @include boton-presionable();
+        &:hover,
+        &:focus {
+            color: $color-nav-hover;
+            background-color: $color-nav-acento;
+        }
+        &:active {
+            color: $color-tipo1;
+            background-color: $color-tipo2;
+        }
+    }
+} */
 .hero {
   background-color: #FBF9F7;
   background-image: linear-gradient(135deg, #FBF9F7, #F4EDDF 35%, #E2D3BC 50%, #F4EDDF 65%, #FBF9F7);
@@ -181,6 +169,11 @@ p {
   align-items: center;
 }
 
+.destacados .carousel {
+  width: 100%;
+  max-width: 800px;
+}
+
 .destacados h2,
 .producto-ysl h2,
 .producto-pr h2 {
@@ -198,17 +191,6 @@ p {
   font-size: 23px;
 }
 
-.contenedor-destacados {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  gap: 20px;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .fragancia-destacada {
   background-color: #F9F6F0;
   display: flex;
@@ -216,13 +198,14 @@ p {
   width: 100%;
   max-width: 100%;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px;
   gap: 20px;
   flex-direction: column;
   align-items: center;
 }
 .fragancia-destacada h3 {
   font-size: 20px;
+  min-height: 50px;
 }
 
 .fragancia-destacada figure {
@@ -234,8 +217,13 @@ p {
 }
 .fragancia-destacada figure img {
   width: 100%;
-  height: auto;
-  max-width: 350px;
+  max-width: 220px;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.fragancia-destacada figure img:hover {
+  transform: scale(1.08);
 }
 .fragancia-destacada figure figcaption {
   font-size: 14px;
@@ -447,7 +435,7 @@ p {
   width: 100%;
   max-width: 100%;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px;
   gap: 20px;
   flex-direction: column;
   align-items: center;
@@ -464,15 +452,26 @@ p {
   width: 100%;
 }
 .contenedor-producto figure img {
-  height: auto;
   width: 100%;
-  max-width: 260px;
+  max-width: 220px;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.contenedor-producto figure img:hover {
+  transform: scale(1.08);
 }
 .contenedor-producto figure figcaption {
   font-size: 14px;
   color: #654B38;
   width: 100%;
   text-align: center;
+}
+
+.producto-set .contenedor-producto figure img {
+  object-fit: contain;
+  background-color: #FFFFFF;
+  border-radius: 8px;
 }
 
 .presentacion-perfil-olfativo {
@@ -622,27 +621,37 @@ footer h3 {
 
 /* media queries */
 @media (max-width: 767px) {
-  .carousel-item .fragancia-destacada {
-    height: auto;
-    min-height: 520px;
-    margin: 0 auto;
+  .logo h1 {
+    font-size: 26px;
+  }
+  .hero h2,
+  .destacados h2,
+  .perfil-olfativo h2,
+  .recomendaciones h2,
+  .promociones h2,
+  .nuestra-comunidad h2,
+  .producto-ysl h2,
+  .producto-pr h2,
+  .producto-set h2,
+  .presentacion-perfil-olfativo h2,
+  .container h2 {
+    font-size: 21px;
+  }
+  .fragancia-destacada h3,
+  .contenedor-producto h3,
+  .presentacion-perfil-olfativo h3,
+  .container h3 {
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) {
   .destacados {
     max-width: 95%;
     width: 95%;
-    margin: 20px auto;
-  }
-  .contenedor-destacados {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
   }
   .grilla-productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -654,35 +663,29 @@ footer h3 {
     align-items: center;
   }
   .logo {
-    display: flex;
-    align-items: center;
     gap: 20px;
   }
   .links-pages {
-    display: flex;
     flex-wrap: nowrap;
-    list-style: none;
     padding: 0;
     margin: 0;
     gap: 15px;
     flex-direction: row;
     align-items: center;
   }
+  /* Se usará más adelante
   .accesos {
-    display: flex;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    gap: 12px;
-    flex-direction: row;
-    align-items: center;
-  }
-  .links-pages li a,
+      display: flex;
+      background-color: transparent;
+      @include estilos-caja(0, 0, 12px);
+      @include flexbox (row, null, center);
+  } */
+  /* Se usará más adelante
   .accesos .crear-cuenta,
-  .accesos .acceder {
+  .accesos .acceder, */
+  .links-pages li a {
     padding: 8px 16px;
     font-size: 14px;
-    border-radius: 10px;
     display: inline-flex;
     height: 38px;
     box-sizing: border-box;
@@ -695,14 +698,6 @@ footer h3 {
     align-items: center;
   }
   /*principal*/
-  .destacados h2,
-  .perfil-olfativo h2,
-  .recomendaciones h2,
-  .promociones h2,
-  .nuestra-comunidad h2,
-  .presentacion-perfil-olfativo h2 {
-    font-size: 23px;
-  }
   .contenedor-principal {
     display: grid;
     grid-template-columns: 1fr;
@@ -740,35 +735,11 @@ footer h3 {
   }
   /*destacados*/
   .destacados {
-    display: flex;
     width: 100%;
     max-width: 100%;
-    border-radius: 12px;
     padding: 40px 40px 60px 40px;
     margin: 0;
     gap: 30px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contenedor-destacados {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    width: 100%;
-    align-items: start;
-  }
-  .fragancia-destacada {
-    background-color: #F9F6F0;
-    display: flex;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 0;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
   }
   /*otras secciones*/
   .perfil-olfativo,
@@ -795,55 +766,39 @@ footer h3 {
   .producto-ysl,
   .producto-pr,
   .producto-set {
-    display: flex;
     width: 100%;
     max-width: 1200px;
-    border-radius: 12px;
     padding: 40px;
     margin: 0;
     gap: 30px;
-    flex-direction: column;
-    align-items: center;
   }
   .grilla-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    width: 100%;
     align-items: stretch;
-  }
-  .contenedor-producto {
-    background-color: #F9F6F0;
-    display: flex;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 0;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
   }
   /*footer*/
   .contenedor-footer {
-    display: flex;
-    padding: 30px;
-    text-align: center;
     justify-content: space-evenly;
-    align-items: center;
-  }
-  .contenedor-footer div {
-    text-align: center;
   }
   .contenedor-footer .lista-footer {
     padding: 0;
-    list-style: none;
   }
   .copyright {
-    text-align: center;
     font-size: 11px;
-    padding: 30px 30px;
+  }
+  .fragancia-destacada figure img,
+  .contenedor-producto figure img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .fragancia-destacada figure img:hover,
+  .contenedor-producto figure img:hover {
+    transform: scale(1.08);
   }
 }
 

@@ -3,10 +3,28 @@
 
 /* media queries */
 @media (max-width: 767px) {
-    .carousel-item .fragancia-destacada {
-        height: auto;
-        min-height: 520px;
-        margin: 0 auto;
+    .logo h1 {
+        font-size: $size-h1-mobile;
+    }
+    .hero h2,
+    .destacados h2,
+    .perfil-olfativo h2,
+    .recomendaciones h2,
+    .promociones h2,
+    .nuestra-comunidad h2,
+    .producto-ysl h2,
+    .producto-pr h2,
+    .producto-set h2,
+    .presentacion-perfil-olfativo h2,
+    .container h2 {
+        font-size: $size-h2-mobile;
+    }
+
+    .fragancia-destacada h3,
+    .contenedor-producto h3,
+    .presentacion-perfil-olfativo h3,
+    .container h3 {
+        font-size: $size-h3-mobile;
     }
 }
 
@@ -14,17 +32,10 @@
     .destacados {
         max-width: 95%;
         width: 95%;
-        margin: 20px auto;
     } 
-    .contenedor-destacados {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
     .grilla-productos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
 } 
 
@@ -35,32 +46,29 @@
         @include flexbox (row, space-between, center);
     }    
     .logo {
-        display: flex;
-        align-items: center;
         gap: 20px;
     } 
 
     .links-pages { 
-        display: flex;  
         flex-wrap: nowrap;
-        list-style: none;
         @include estilos-caja(0, 0, 15px);
         @include flexbox (row, null, center);  
     }
 
-    .accesos {  
-        display: flex;  
+    /* Se usará más adelante
+    .accesos {
+        display: flex;
         background-color: transparent;
         @include estilos-caja(0, 0, 12px);
-        @include flexbox (row, null, center);    
-    }
+        @include flexbox (row, null, center);
+    } */
     
-    .links-pages li a,
+    /* Se usará más adelante
     .accesos .crear-cuenta,
-    .accesos .acceder {
+    .accesos .acceder, */
+    .links-pages li a {
         padding: 8px 16px;
         font-size: 14px;
-        border-radius: 10px;
         display: inline-flex;
         height: 38px; 
         box-sizing: border-box;
@@ -73,14 +81,6 @@
     }
 
     /*principal*/
-    .destacados h2,
-    .perfil-olfativo h2,
-    .recomendaciones h2,
-    .promociones h2,
-    .nuestra-comunidad h2,
-    .presentacion-perfil-olfativo h2 {
-        font-size: $size-h2;
-    }    
 
     .contenedor-principal {
         display: grid;
@@ -114,31 +114,9 @@
 
     /*destacados*/
     .destacados { 
-        display: flex;      
         width: 100%;
         max-width: 100%;
-        border-radius: 12px;
         @include estilos-caja(40px 40px 60px 40px, 0, 30px);
-        @include flexbox (column, null, center);
-    }
-
-    .contenedor-destacados {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-        width: 100%;
-        align-items: start;
-    }
-
-    .fragancia-destacada {
-        background-color: $color-principal;
-        display: flex;
-        text-align: center;        
-        width: 100%;
-        max-width: 100%;
-        border-radius: 10px;
-        @include estilos-caja(30px, 0, 20px);
-        @include flexbox (column, null, center);
     }
 
     /*otras secciones*/
@@ -166,51 +144,32 @@
     .producto-ysl,
     .producto-pr,
     .producto-set {
-        display: flex;
         width: 100%;
         max-width: 1200px;
-        border-radius: 12px;
         @include estilos-caja(40px, 0, 30px);
-        @include flexbox (column, null, center);
     }
 
     .grilla-productos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
-        width: 100%;
         align-items: stretch;
-    }
-
-    .contenedor-producto {
-        background-color: $color-principal;
-        display: flex;
-        text-align: center;
-        width: 100%;
-        max-width: 100%;
-        border-radius: 10px;
-        @include estilos-caja(30px, 0, 20px);
-        @include flexbox (column, null, center);
     }
 
     /*footer*/
     .contenedor-footer {
-        display: flex;
-        padding: 30px;
-        text-align: center;
-        @include flexbox (null, space-evenly, center);    
-        div {
-            text-align: center;
-        }
+        justify-content: space-evenly;
         .lista-footer {
             padding: 0;
-            list-style: none;
         }
     }
 
     .copyright {
-        text-align: center;
         font-size: 11px;
-        padding: 30px 30px;
+    }
+
+    .fragancia-destacada figure img,
+    .contenedor-producto figure img {
+        @include imagen-producto($size-img-desktop);
     }
 }
