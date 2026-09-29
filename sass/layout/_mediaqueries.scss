@@ -30,12 +30,7 @@
 
 @media (max-width: 1023px) {
     .hero-index {
-        max-width: 100%;
-        background-size: cover, 100% auto;
-        background-position: center, top center;
-        background-repeat: no-repeat;
-        background-color: $color-principal;
-        padding-top: 32vw;
+        background-image: linear-gradient(135deg, $color-hero, $color-nav-fondo 35%, $color-nav-hover 50%, $color-nav-fondo 65%, $color-hero);
         min-height: auto;
     }
 }

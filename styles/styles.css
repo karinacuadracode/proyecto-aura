@@ -654,12 +654,7 @@ footer h3 {
 }
 @media (max-width: 1023px) {
   .hero-index {
-    max-width: 100%;
-    background-size: cover, 100% auto;
-    background-position: center, top center;
-    background-repeat: no-repeat;
-    background-color: #F9F6F0;
-    padding-top: 32vw;
+    background-image: linear-gradient(135deg, #FBF9F7, #F4EDDF 35%, #E2D3BC 50%, #F4EDDF 65%, #FBF9F7);
     min-height: auto;
   }
 }
