@@ -2,9 +2,8 @@
 
 Sitio web multipágina desarrollado para el curso de Desarrollo Web de Coderhouse, enfocado en un catálogo digital de perfumería y asesoría olfativa.
 
-## Sitio en línea
-Ver en: 
-👉 [Proyecto Aura en GitHub Pages](https://karinacuadracode.github.io/proyecto-aura/)
+## Ver en: 
+👉 [Proyecto Aura](https://karinacuadracode.github.io/proyecto-aura/)
 
 ---
 
