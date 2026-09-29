@@ -14,11 +14,4 @@ Sitio web multipágina desarrollado para el curso de Desarrollo Web de Coderhous
 * **Sobre nosotros:** Propuesta de valor e información institucional.
 * **Contacto:** Canales de comunicación y formulario de atención.
 
-## Tecnologías utilizadas:
-
-* HTML5
-* CSS3 (Estilos propios y Media Queries para diseño responsive)
-* Bootstrap
-* Git y GitHub
-
 **Autora:** Karina Cuadra
