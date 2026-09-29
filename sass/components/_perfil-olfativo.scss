@@ -7,14 +7,14 @@
     text-align: center;
     @include estilos-caja(0 20px, 30px auto, null);    
     h2 {
-        font-size: 26px;
+        font-size: $size-h2;
         text-align: center;
         padding: 15px;
         background-color: $color-olfativo-titulo;
         border-radius: 10px 10px 0 0;
     }
     h3 {
-        font-size: 20px;
+        font-size: $size-h3;
     }
 }
 
@@ -31,7 +31,7 @@
         border-radius: 8px;
     }
     figcaption {
-        font-size: 16px;
+        font-size: $size-chico;
         color: $color-texto-general;
     }
 }
@@ -43,7 +43,7 @@
     @include estilos-caja(25px 20px, null, 15px);
     @include flexbox (column, null, center);
     p {
-        font-size: 20px;
+        font-size: $size-p;
         text-align: center;
         gap: 20px;
         padding: 20px;

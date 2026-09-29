@@ -28,8 +28,9 @@
 }
 
 .producto-ysl h2,
-.producto-pr h2 {
-    font-size: 26px;
+.producto-pr h2,
+.producto-set h2 {
+    font-size: $size-h2;
     text-align: center;
     color: $color-texto-general;
     margin-bottom: 15px;
@@ -51,6 +52,9 @@
     border-radius: 12px;
     @include estilos-caja(30px, null, 20px);
     @include flexbox(column, null, center);
+    h3 {
+        font-size: $size-h3;
+    }    
 }
 
 .contenedor-producto figure {
@@ -64,7 +68,7 @@
         max-width: 260px;
     }
     figcaption {
-        font-size: 14px;
+        font-size: $size-chico;
         color: $color-texto-secundario;
         width: 100%;
         text-align: center;

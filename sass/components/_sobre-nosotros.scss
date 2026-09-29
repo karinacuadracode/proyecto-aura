@@ -13,3 +13,15 @@
     --bs-accordion-btn-bg: #{$color-nav-fondo};
     --bs-accordion-btn-color: #{$color-nav-acento};
 }
+
+.container {
+    h2 {
+        font-size: $size-h2;
+    }
+    h3 {
+        font-size: $size-h3;
+    }
+    p {
+        font-size: $size-p;
+    }
+}

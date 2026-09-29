@@ -22,6 +22,10 @@ body {
   width: 100%;
 }
 
+p {
+  font-size: 16px;
+}
+
 .header {
   background-color: #C8A88D;
   flex-direction: column;
@@ -44,7 +48,7 @@ body {
 }
 .logo h1 {
   font-family: "Inconsolata", monospace;
-  font-size: 26px;
+  font-size: 28px;
   color: #2A1E17;
 }
 
@@ -135,7 +139,7 @@ body {
   gap: 15px;
 }
 .hero h2 {
-  font-size: 26px;
+  font-size: 23px;
   text-align: center;
 }
 
@@ -189,7 +193,14 @@ body {
   text-align: center;
   padding: 20px;
   width: 100%;
-  font-size: 26px;
+  font-size: 23px;
+}
+
+.perfil-olfativo h2,
+.recomendaciones h2,
+.promociones h2,
+.nuestra-comunidad h2 {
+  font-size: 23px;
 }
 
 .contenedor-destacados {
@@ -216,7 +227,7 @@ body {
   align-items: center;
 }
 .fragancia-destacada h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .fragancia-destacada figure {
@@ -415,9 +426,10 @@ body {
   background-color: #B18EB9;
 }
 
-.producto-ysl h2, .producto-set h2,
-.producto-pr h2 {
-  font-size: 26px;
+.producto-ysl h2,
+.producto-pr h2,
+.producto-set h2 {
+  font-size: 23px;
   text-align: center;
   color: #2A1E17;
   margin-bottom: 15px;
@@ -444,6 +456,9 @@ body {
   gap: 20px;
   flex-direction: column;
   align-items: center;
+}
+.contenedor-producto h3 {
+  font-size: 20px;
 }
 
 .contenedor-producto figure {
@@ -473,7 +488,7 @@ body {
   margin: 30px auto;
 }
 .presentacion-perfil-olfativo h2 {
-  font-size: 26px;
+  font-size: 23px;
   text-align: center;
   padding: 15px;
   background-color: #D2C4AC;
@@ -500,7 +515,7 @@ body {
   border-radius: 8px;
 }
 .contenedor-notas-olfativas figcaption {
-  font-size: 16px;
+  font-size: 14px;
   color: #2A1E17;
 }
 
@@ -514,7 +529,7 @@ body {
   align-items: center;
 }
 .contenedor-test-olfativo p {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   gap: 20px;
   padding: 20px;
@@ -561,6 +576,16 @@ body {
   --bs-accordion-btn-color: #471A19;
 }
 
+.container h2 {
+  font-size: 23px;
+}
+.container h3 {
+  font-size: 20px;
+}
+.container p {
+  font-size: 16px;
+}
+
 footer {
   background-color: #D7C4B2;
   color: #2A1E17;
@@ -570,7 +595,7 @@ footer {
   text-align: center;
 }
 footer h3 {
-  font-size: 15px;
+  font-size: 14px;
   color: #2A1E17;
 }
 
@@ -597,6 +622,9 @@ footer h3 {
   padding: 30px 30px;
   font-size: 10px;
 }
+.copyright p {
+  font-size: inherit;
+}
 
 /* media queries */
 @media (max-width: 767px) {
@@ -604,27 +632,6 @@ footer h3 {
     height: auto;
     min-height: 520px;
     margin: 0 auto;
-  }
-  .container h2 {
-    font-size: 22px;
-  }
-  .container h3 {
-    font-size: 16px;
-  }
-  .container p {
-    font-size: 14px;
-  }
-  .presentacion-perfil-olfativo h2 {
-    font-size: 20px;
-  }
-  .contenedor-test-olfativo p {
-    font-size: 16px;
-  }
-  .contenedor-producto h3 {
-    font-size: 16px;
-  }
-  .contenedor-producto figcaption {
-    font-size: 13px;
   }
 }
 @media (min-width: 768px) {
@@ -656,9 +663,6 @@ footer h3 {
     display: flex;
     align-items: center;
     gap: 20px;
-  }
-  .logo h1 {
-    font-size: 28px;
   }
   .links-pages {
     display: flex;
@@ -697,14 +701,13 @@ footer h3 {
     align-items: center;
   }
   /*principal*/
-  .hero h2,
   .destacados h2,
   .perfil-olfativo h2,
   .recomendaciones h2,
   .promociones h2,
   .nuestra-comunidad h2,
   .presentacion-perfil-olfativo h2 {
-    font-size: 27px;
+    font-size: 23px;
   }
   .contenedor-principal {
     display: grid;
@@ -714,9 +717,6 @@ footer h3 {
     padding: 0 20px;
     margin: 0 auto 60px auto;
     gap: 40px;
-  }
-  .container h2 {
-    font-size: 27px;
   }
   .hero {
     width: 100vw;
@@ -798,12 +798,6 @@ footer h3 {
     margin: 0 auto 60px auto;
     gap: 40px;
   }
-  .contenedor-productos h2 {
-    font-size: 27px;
-  }
-  .contenedor-productos h3 {
-    font-size: 20px;
-  }
   .producto-ysl,
   .producto-pr,
   .producto-set {
@@ -816,11 +810,6 @@ footer h3 {
     gap: 30px;
     flex-direction: column;
     align-items: center;
-  }
-  .producto-ysl h2,
-  .producto-pr h2,
-  .producto-set h2 {
-    font-size: 27px;
   }
   .grilla-productos {
     display: grid;

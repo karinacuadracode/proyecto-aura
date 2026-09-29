@@ -8,29 +8,6 @@
         min-height: 520px;
         margin: 0 auto;
     }
-    .container h2 {
-        font-size: 22px;
-    }
-    .container h3 {
-        font-size: 16px;
-    }
-    .container p {
-        font-size: 14px;
-    }
-    .presentacion-perfil-olfativo h2 {
-        font-size: 20px;
-    }
-    .contenedor-test-olfativo p {
-        font-size: 16px;
-    }
-    .contenedor-producto {
-        h3 {
-            font-size: 16px;
-        }
-        figcaption {
-            font-size: 13px;
-        }
-    }
 }
 
 @media (min-width: 768px) {
@@ -61,10 +38,6 @@
         display: flex;
         align-items: center;
         gap: 20px;
-    
-        h1 { 
-        font-size: 28px; 
-        } 
     } 
 
     .links-pages { 
@@ -100,14 +73,13 @@
     }
 
     /*principal*/
-    .hero h2,
     .destacados h2,
     .perfil-olfativo h2,
     .recomendaciones h2,
     .promociones h2,
     .nuestra-comunidad h2,
     .presentacion-perfil-olfativo h2 {
-        font-size: 27px;
+        font-size: $size-h2;
     }    
 
     .contenedor-principal {
@@ -122,10 +94,6 @@
             "nuestra-comunidad";
         max-width: 1200px;
         @include estilos-caja(0 20px, 0 auto 60px auto, 40px);
-    }
-
-    .container h2 {
-        font-size: 27px;
     }
 
     .hero {
@@ -193,12 +161,6 @@
         flex-direction: column;
         max-width: 1200px;
         @include estilos-caja(0 20px, 0 auto 60px auto, 40px);
-        h2 {
-            font-size: 27px;
-        }    
-        h3 {
-            font-size: 20px;
-        }
     }
 
     .producto-ysl,
@@ -210,12 +172,6 @@
         border-radius: 12px;
         @include estilos-caja(40px, 0, 30px);
         @include flexbox (column, null, center);
-    }
-
-    .producto-ysl h2,
-    .producto-pr h2,
-    .producto-set h2 {
-        font-size: 27px;
     }
 
     .grilla-productos {

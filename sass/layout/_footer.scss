@@ -9,7 +9,7 @@ footer {
     width: 100%;
     text-align: center;
     h3 {
-        font-size: 15px;
+        font-size: $size-chico;
         color: $color-texto-general;
     }
 }
@@ -35,4 +35,7 @@ footer {
     color: $color-texto-secundario;
     padding: 30px 30px;
     font-size: 10px;
+    p {
+        font-size: inherit;
+    }
 }
