@@ -1,8 +1,8 @@
-# Proyecto Aura - Identidad Aromática
+# Aura - Universo Aromático
 
 Sitio web multipágina desarrollado para el curso de Desarrollo Web de Coderhouse, enfocado en un catálogo digital de perfumería y asesoría olfativa.
 
-## Ver 👉 [Aura - Identidad Aromática](https://karinacuadracode.github.io/proyecto-aura/)
+## Ver 👉 [Aura - Universo Aromático](https://karinacuadracode.github.io/proyecto-aura/)
 
 ---
 
