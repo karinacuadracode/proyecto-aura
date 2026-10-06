@@ -2,7 +2,7 @@
 
 Sitio web multipágina desarrollado para el curso de Desarrollo Web de Coderhouse, enfocado en un catálogo digital de perfumería y asesoría olfativa.
 
-## Ver 👉 [Aura - Universo Aromático](https://aura-universo-olfativo.netlify.app/)
+## Ver 👉 [Aura - Universo Aromático](https://aura-universo-aromatico.vercel.app/)
 
 ---
 
